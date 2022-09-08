@@ -1,6 +1,5 @@
 import Input from './Components/Input.js';
 import List from './Components/List'
-import Job from './Components/Job'
 import './App.css';
 
 function App() {
@@ -8,7 +7,7 @@ function App() {
     <div className="App">
    <Input />
    <List />
-   <Job/>
+ 
     </div>
   );
 }

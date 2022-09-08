@@ -1,6 +1,7 @@
 import Job from './Job.js'
 
 const List = () => {
+
 return<>
     <Job/>
     <Job/>
