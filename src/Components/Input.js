@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const Input = () => {
-    const [jobtitle, setJobTitle] = useState('')
+    const [jobTitle, setJobTitle] = useState('')
     const [company, setCompany] = useState('')
     const [link, setLink] = useState('')
     const [applied, setApplied] = useState(false)
@@ -15,28 +15,30 @@ const Input = () => {
 
 
 const onChangeTitle = (e) =>{
-    setNewJob({'Job Tilte': e.target.value});
-    
+    setJobTitle(e.target.value);
+    console.log(jobTitle)
 }
 
 const onChangeCompany = (e) =>{
-    setNewJob( {'Company': e.target.value})
-    console.log(newJob)
+    setCompany( e.target.value)
+    console.log(company)
 }
 
 const onLinkChange = (e) =>{
-    setNewJob( {'Link': e.target.value})
-    console.log(newJob)
+    setLink( e.target.value)
+    console.log(link)
 }
 
 const onAppliedChange = (e) =>{
-    setNewJob( {'Applied': e.target.value})
-    console.log(newJob)
+    setApplied(e.target.value)
+    console.log(applied)
 }
 
 const onSubmit = () =>{
-    console.log(newJob)
-}
+    setNewJob (
+        {jobTitle, company, link, applied}
+    )
+   }
     return<>
    
         <input type='text' placeholder=' Job Title' onChange={onChangeTitle}/> 
