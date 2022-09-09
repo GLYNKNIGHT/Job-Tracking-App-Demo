@@ -16,15 +16,19 @@ const handleSubmit = (e) =>{
     method: 'POST',
     headers:{'Content-Type': 'application/json'},
     body: JSON.stringify(job)
-   })
+   }).then(()=> console.log(job))
+    
+   
      }
 
 
     return<div >
-    <form className="add-job" onSubmit={handleSubmit}>
+    <form  onSubmit={handleSubmit}>
+    <div className="add-job">
         <div>
         <label>Job Title</label>
-            <input 
+            <input
+                className="input" 
                 type='text' 
                 placeholder=' Job Title' 
                 value={jobTitle}
@@ -33,6 +37,7 @@ const handleSubmit = (e) =>{
                 <div>
         <label>Company</label> 
             <input 
+                className="input" 
                 type='text' 
                 placeholder='Company' 
                 value={company}
@@ -41,12 +46,16 @@ const handleSubmit = (e) =>{
                 <div>
         <label>Link</label>
             <input 
+                className="input"
                 type='text' 
                 placeholder=' Link' 
                 value={link}
                 onChange={(e)=> setLink(e.target.value)}  /> 
                 </div>
-        <button>Add Job</button>
+                <div className="btn-div">
+                </div>
+        <button className="btn">Add Job</button>
+        </div>
         </form>
     </div>
 }

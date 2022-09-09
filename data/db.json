@@ -1,13 +1,22 @@
 {
-    "jobs":[{
-        "jobTitle": "Junior Dev",
-        "company": "BAE Systems",
-        "link": "https://trello.com/c/1kldkvZT/1-bae-applied-intelligence-graduate-software-engineer-x15"
+  "jobs": [
+    {
+      "jobTitle": "Junior Dev",
+      "company": "BAE Systems",
+      "link": "https://trello.com/c/1kldkvZT/1-bae-applied-intelligence-graduate-software-engineer-x15",
+      "id": 1
     },
     {
-        "jobTitle": "Junior Softwear Eng",
-        "company": "Hamiltonian Dynamics",
-        "link": "https://trello.com/c/nQSJ1ke4/2-hamilton-dynamics-graduate-software-engineer-x2"
+      "jobTitle": "Junior Softwear Eng",
+      "company": "Hamiltonian Dynamics",
+      "link": "https://trello.com/c/nQSJ1ke4/2-hamilton-dynamics-graduate-software-engineer-x2",
+      "id": 2
+    },
+    {
+      "jobTitle": "Junior Dev",
+      "company": "Bamboo Auctions",
+      "link": "https://trello.com/c/ECe1NY5l/17-bamboo-auctions-junior-engineer-x1",
+      "id": 3
     }
-    ]
+  ]
 }
