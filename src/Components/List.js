@@ -1,12 +1,10 @@
 import Job from './Job.js'
 
-const List = () => {
+const List = ({jobs}) => {
 
-return<>
-    <Job/>
-    <Job/>
-    <Job/>
-</>
+return<div className='jobs-list'>
+   {jobs.map((job) => (<Job jobTitle={job.jobTitle} company={job.company} link={job.link} />))}
+</div>
 
 }
 

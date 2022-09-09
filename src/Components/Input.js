@@ -4,50 +4,51 @@ const Input = () => {
     const [jobTitle, setJobTitle] = useState('')
     const [company, setCompany] = useState('')
     const [link, setLink] = useState('')
-    const [applied, setApplied] = useState(false)
-    const [newJob, setNewJob] = useState({
-            'Job Title': '',
-            'Company': '',
-            'Link': '',
-            'Applied': 'False',
-    })
 
 
 
-const onChangeTitle = (e) =>{
-    setJobTitle(e.target.value);
-    console.log(jobTitle)
-}
 
-const onChangeCompany = (e) =>{
-    setCompany( e.target.value)
-    console.log(company)
-}
+const handleSubmit = (e) =>{
+   e.preventDefault();
+   const job = {jobTitle, company, link};
+ console.log(job)
+   fetch('http://localhost:8000/jobs', {
+    method: 'POST',
+    headers:{'Content-Type': 'application/json'},
+    body: JSON.stringify(job)
+   })
+     }
 
-const onLinkChange = (e) =>{
-    setLink( e.target.value)
-    console.log(link)
-}
 
-const onAppliedChange = (e) =>{
-    setApplied(e.target.value)
-    console.log(applied)
-}
-
-const onSubmit = () =>{
-    setNewJob (
-        {jobTitle, company, link, applied}
-    )
-   }
-    return<>
-   
-        <input type='text' placeholder=' Job Title' onChange={onChangeTitle}/> 
-        <input type='text' placeholder=' Company' onChange={onChangeCompany} /> 
-        <input type='text' placeholder=' Link' onChange={onLinkChange}  /> 
-        <input type='checkbox' onChange={onAppliedChange}/>
-        <button onClick={()=>onSubmit()}>Add Job</button>
-    
-    </>
+    return<div >
+    <form className="add-job" onSubmit={handleSubmit}>
+        <div>
+        <label>Job Title</label>
+            <input 
+                type='text' 
+                placeholder=' Job Title' 
+                value={jobTitle}
+                onChange={(e)=> setJobTitle(e.target.value)}/>
+                </div>
+                <div>
+        <label>Company</label> 
+            <input 
+                type='text' 
+                placeholder='Company' 
+                value={company}
+                onChange={(e)=> setCompany(e.target.value)} /> 
+                </div>
+                <div>
+        <label>Link</label>
+            <input 
+                type='text' 
+                placeholder=' Link' 
+                value={link}
+                onChange={(e)=> setLink(e.target.value)}  /> 
+                </div>
+        <button>Add Job</button>
+        </form>
+    </div>
 }
 
 export default Input
