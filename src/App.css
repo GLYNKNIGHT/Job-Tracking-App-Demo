@@ -58,3 +58,11 @@
    border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+.big-card{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 60vh;
+  height: 40hv;
+}
