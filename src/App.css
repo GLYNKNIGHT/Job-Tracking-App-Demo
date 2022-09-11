@@ -17,10 +17,10 @@
   justify-content: space-evenly; 
   text-align: left;
   font-size: 1.5rem;
-  background-color: aliceblue;
+  background-color: rgb(190, 222, 250);
   padding:15px;
   border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .input{
   height: 2rem;
@@ -28,7 +28,9 @@
   margin-top:10px;
   border-radius: 5px;
 }
-.btn {
+.btn
+ {
+  
   width: 200px;
   height: 2rem;
   border-radius: 10px;
@@ -36,33 +38,55 @@
   background-color: green;
   color: white;
 }
-.btn-div{
-  text-align: right;
-}
+
+
 .jobs-list{
   width:40vw;
   height:70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-   background-color: aliceblue;
+  background-color: rgb(190, 222, 250);
   padding:15px;
   border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow-y: scroll;
 }
 
 .job{
   width: 100%;
-  height: 20%;
+  height: 25%;
   background-color: white;
    border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.job-btns{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+ 
+}
+
+.job-btns button{
+  width: 150px;
+  height: 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+}
 .big-card{
   position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 60vh;
-  height: 40hv;
+  width: 800px;
+  height: 400px;
+  padding: 10px;
+  border: 3px solid #575757;
+  border-radius: 10px ;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;  /* Negative half of height. */
+  margin-left: -400px; 
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

@@ -9,8 +9,7 @@ const Input = () => {
 
 
 const handleSubmit = (e) =>{
-   e.preventDefault();
-   const job = {jobTitle, company, link};
+      const job = {jobTitle, company, link};
  console.log(job)
    fetch('http://localhost:8000/jobs', {
     method: 'POST',
