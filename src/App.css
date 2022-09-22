@@ -1,6 +1,9 @@
 .App {
   text-align: center;
- 
+ background-color: black;
+}
+.title{
+  color:white
 }
 
 .main{
@@ -11,16 +14,14 @@
 
 .add-job{
   width:30vw;
-  height:70vh;
+  height:80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; 
   text-align: left;
   font-size: 1.5rem;
-  background-color: rgb(190, 222, 250);
+  background-color: rgb(226, 237, 247);
   padding:15px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .input{
   height: 2rem;
@@ -41,24 +42,24 @@
 
 
 .jobs-list{
-  width:40vw;
-  height:70vh;
-  display: flex;
-  flex-direction: column;
+  width:50vw;
+  height:80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
-  background-color: rgb(190, 222, 250);
+  background-color: rgb(226, 237, 247);
   padding:15px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   gap: 20px;
   overflow-y: scroll;
 }
 
 .job{
   width: 100%;
-  height: 25%;
+  min-height: 250px;
   background-color: white;
    border-radius: 10px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   margin: 10px;
 }
 
 .job-btns{

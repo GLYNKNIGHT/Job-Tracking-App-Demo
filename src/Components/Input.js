@@ -4,12 +4,13 @@ const Input = () => {
     const [jobTitle, setJobTitle] = useState('')
     const [company, setCompany] = useState('')
     const [link, setLink] = useState('')
+    const [applied, setApplied] = useState(false)
 
 
 
 
 const handleSubmit = (e) =>{
-      const job = {jobTitle, company, link};
+      const job = {jobTitle, company, link, applied};
  console.log(job)
    fetch('http://localhost:8000/jobs', {
     method: 'POST',
@@ -50,11 +51,16 @@ const handleSubmit = (e) =>{
                 placeholder=' Link' 
                 value={link}
                 onChange={(e)=> setLink(e.target.value)}  /> 
+        
+        </div>
+        <div>
+        <label>Applied</label>
+        <input type="checkbox" onChange={(e)=> setApplied(true)} />
                 </div>
                 <div className="btn-div">
+                <button className="btn">Add Job</button>
                 </div>
-        <button className="btn">Add Job</button>
-        </div>
+               </div>
         </form>
     </div>
 }

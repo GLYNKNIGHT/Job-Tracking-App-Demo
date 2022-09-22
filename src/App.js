@@ -18,7 +18,7 @@ const [jobs, setJobs] = useState(null)
 
   return (
     <div className="App">
-    <h1>Jobs Progress</h1>
+    <h1 className='title'>Progress</h1>
     <div className='main'>
    <Input />
    {jobs && <List jobs={jobs}/>}
