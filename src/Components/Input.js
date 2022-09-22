@@ -12,7 +12,7 @@ const Input = () => {
 
 
 const handleSubmit = (e) =>{
-      const job = {jobTitle, company, link, applied};
+      const job = {jobTitle, company, link, applied, interview, offer};
  console.log(job)
    fetch('http://localhost:8000/jobs', {
     method: 'POST',
@@ -57,15 +57,15 @@ const handleSubmit = (e) =>{
         </div>
         <div className="checkboxes">
             <div>
-            <label>Applied</label>
+            <label>Applied     </label>
             <input type="checkbox" onChange={(e)=> setApplied(true)} />
             </div>
             <div>
-            <label>Interview</label>
+            <label>Interview     </label>
             <input type="checkbox" onChange={(e)=> setInterview(true)} />
             </div>
             <div>
-            <label>Offer</label>
+            <label>Offer     </label>
             <input type="checkbox" onChange={(e)=> setOffer(true)} />
             </div>
         </div>
