@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import BigCard from './BigCard'
 
-const Job = ({jobTitle, company, link, id, applied}) => {
+const Job = ({jobTitle, company, link, id, applied, interview, offer}) => {
     
 const [bigCard , setBigCard] = useState(false)
 //const [newLink, setNewLink] = useState({link})
@@ -22,7 +22,13 @@ const handleEdit = ({id}) => {
     <h3>{company}</h3>
     <p>{jobTitle}</p>
     <a href={link}>Link to Post</a>
-    {(applied === true)? <p style={{color: "green"}}>Applied</p>:<p style={{color: "red"}}>Not Applied</p>}
+    <div className='progress'>
+    {(applied === true)? <p style={{color: "green"}}>Applied ✔️</p>:<p style={{color: "red"}}>Not Applied</p>}
+    <p>|</p>
+    {(interview === true)? <p style={{color: "green"}}>Interview ✔️</p>:<p style={{color: "red"}}>No Interview</p>}
+    <p>|</p>
+    {(offer === true)? <p style={{color: "green"}}>Offer ✔️</p>:<p style={{color: "red"}}>No Offer</p>}
+    </div>
        <div className='job-btns'>
     <button onClick={()=> setBigCard(true)}>Edit</button>
     <button onClick={()=> handleDelete({id})}> Delete</button>

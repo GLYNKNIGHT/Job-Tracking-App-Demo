@@ -5,6 +5,8 @@ const Input = () => {
     const [company, setCompany] = useState('')
     const [link, setLink] = useState('')
     const [applied, setApplied] = useState(false)
+    const [interview, setInterview] = useState(false)
+    const [offer, setOffer] = useState(false) 
 
 
 
@@ -53,10 +55,20 @@ const handleSubmit = (e) =>{
                 onChange={(e)=> setLink(e.target.value)}  /> 
         
         </div>
-        <div>
-        <label>Applied</label>
-        <input type="checkbox" onChange={(e)=> setApplied(true)} />
-                </div>
+        <div className="checkboxes">
+            <div>
+            <label>Applied</label>
+            <input type="checkbox" onChange={(e)=> setApplied(true)} />
+            </div>
+            <div>
+            <label>Interview</label>
+            <input type="checkbox" onChange={(e)=> setInterview(true)} />
+            </div>
+            <div>
+            <label>Offer</label>
+            <input type="checkbox" onChange={(e)=> setOffer(true)} />
+            </div>
+        </div>
                 <div className="btn-div">
                 <button className="btn">Add Job</button>
                 </div>
