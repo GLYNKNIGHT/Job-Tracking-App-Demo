@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useReducer } from "react";
 
 const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBigCard, onClick}) =>{
 
@@ -9,7 +9,15 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBig
  const [appliedChecked, setAppliedChecked] = useState(applied)
  const [interviewChecked, setInterviewChecked] = useState(interview)
  const [offerChecked, setOfferChecked] = useState(interview)
+ const [, forceUpdate] = useReducer(x => x + 1, 0);
 
+
+
+ //trying to force re-render when big card closes
+ function handleClick() {
+   forceUpdate();
+   setBigCard(false)
+ }
     const handleSubmit = (e) =>{
         const job = { applied :editApplied,  
                       interview: editInterview, 
@@ -26,6 +34,8 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBig
        }
   
   
+
+
     const updateApplied = (e) =>{
       setAppliedChecked(!appliedChecked)
       setEditApplied(!appliedChecked)
@@ -81,7 +91,7 @@ return <div className="big-card">
 
 <div className="big-card-btns">
 <button className="btn" onClick={(e)=> handleSubmit(e)}> Save Changes</button>
-<button className="btn" onClick={()=>setBigCard(false)}> Close</button>
+<button className="btn" onClick={()=>handleClick()}> Close</button>
 </div>
 </div>
 }
