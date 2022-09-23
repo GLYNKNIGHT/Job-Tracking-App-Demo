@@ -7,16 +7,18 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, onClic
  const [editOffer, setEditOffer] = useState(offer)
 
     const handleSubmit = (e) =>{
-        const job = { editApplied, editInterview, editOffer};
+        const job = { applied :editApplied,  
+                      interview: editInterview, 
+                      offer: editOffer};
    console.log(job)
-   /*
+   
      fetch(`http://localhost:8000/jobs/${id}`, {
       method: 'PATCH',
       headers:{'Content-Type': 'application/json'},
       body: JSON.stringify(job)
      }).then(()=> console.log(job))
       
-     */
+     
        }
   
 
