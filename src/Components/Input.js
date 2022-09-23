@@ -7,7 +7,7 @@ const Input = () => {
     const [applied, setApplied] = useState(false)
     const [interview, setInterview] = useState(false)
     const [offer, setOffer] = useState(false) 
-
+    
 
 
 
@@ -59,15 +59,27 @@ const handleSubmit = (e) =>{
         <div className="checkboxes">
             <div>
             <label>Applied     </label>
-            <input type="checkbox" onChange={(e)=> setApplied(true)} />
+            <label class="switch">
+            <input type="checkbox"  onChange={(e)=> setApplied(true)} />
+            <span class="slider round"></span>
+            </label>
+          
             </div>
             <div>
             <label>Interview     </label>
-            <input type="checkbox" onChange={(e)=> setInterview(true)} />
+            <label class="switch">
+            <input type="checkbox"  onChange={(e)=> setInterview(true)} />
+            <span class="slider round"></span>
+            </label>
+          
             </div>
             <div>
             <label>Offer     </label>
-            <input type="checkbox" onChange={(e)=> setOffer(true)} />
+            <label class="switch">
+            <input type="checkbox"  onChange={(e)=> setOffer(true)} />
+            <span class="slider round"></span>
+            </label>
+    
             </div>
         </div>
                 <div className="btn-div">

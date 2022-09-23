@@ -1,9 +1,9 @@
 import {useState} from 'react'
 import BigCard from './BigCard'
 
-const Job = ({jobTitle, company, link, id, applied, interview, offer}) => {
+const Job = ({jobTitle, company, link, id, applied, interview, offer,bigCard, setBigCard}) => {
     
-const [bigCard , setBigCard] = useState(false)
+
 
 
 const handleDelete = ({id}) =>{
@@ -40,7 +40,8 @@ const handleDelete = ({id}) =>{
             applied={applied}
             interview={interview}
             offer={offer}
-            onClick={()=>setBigCard(false)}
+            setBigCard={setBigCard}
+            //onClick={()=>setBigCard(false)}
             />
             
     : null}
