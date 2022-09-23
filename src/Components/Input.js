@@ -27,6 +27,7 @@ const handleSubmit = (e) =>{
     return<div >
     <form  onSubmit={handleSubmit}>
     <div className="add-job">
+    <h3>New Job</h3>
         <div>
         <label>Job Title</label>
             <input

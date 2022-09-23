@@ -9,7 +9,9 @@ return<div className='jobs-list'>
                               company={job.company} 
                               link={job.link} 
                               applied={job.applied} 
-                              interview={job.interview}/>))}
+                              interview={job.interview}
+                              offer={job.offer}
+                              />))}
 </div>
 
 }

@@ -6,6 +6,10 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, onClic
  const [editInterview,setEditInterview] = useState(interview)
  const [editOffer, setEditOffer] = useState(offer)
 
+ const [appliedChecked, setAppliedChecked] = useState(editApplied)
+ const [interviewChecked, setInterviewChecked] = useState()
+ const [offerChecked, setOfferChecked] = useState()
+
     const handleSubmit = (e) =>{
         const job = { applied :editApplied,  
                       interview: editInterview, 
@@ -21,7 +25,11 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, onClic
      
        }
   
-
+  
+    const updateApplied = (e) =>{
+      setAppliedChecked(true)
+      setEditApplied(!applied)
+    }
 
 
 
@@ -30,29 +38,35 @@ return <div className="big-card">
 <p>{jobTitle}</p>
 <a href={link}>Link to Post</a>
 <div className='progress'>
+    
     <p>Applied </p>
-    {(applied === true)? <p>✔️</p> :<p>❌</p>}
+    {(editApplied === true)? <p>✔️</p> :<p>❌</p>}
+            <label class="switch">
+            <input type="checkbox" checked={appliedChecked} onChange={(e)=> updateApplied(e)} />
+            <span class="slider round"></span>
+            </label>
+    
+    
     <p>|</p>
+
     <p >Interview </p>
-    {(interview === true)?<p >✔️</p> :<p>❌</p>}
-    <p>|</p>
-    <p>Offer</p>
-    {(offer === true)? <p>✔️</p>:<p>❌</p>}
-    </div>
-<div className="checkboxes">
-            <div>
-            <label>Applied     </label>
-            <input type="checkbox" checked={(applied===true)? 'checked': ''} onChange={(e)=> setEditApplied(!applied)} />
-            </div>
-            <div>
-            <label>Interview     </label>
+    {(editInterview === true)?<p >✔️</p> :<p>❌</p>}
+            <label class="switch">
             <input type="checkbox" onChange={(e)=> setEditInterview(!interview)} />
-            </div>
-            <div>
-            <label>Offer     </label>
+            <span class="slider round"></span>
+            </label>
+    
+    <p>|</p>
+
+    <p>Offer</p>
+    {(editOffer === true)? <p>✔️</p>:<p>❌</p>}
+            <label class="switch">
             <input type="checkbox" onChange={(e)=> setEditOffer(!offer)} />
-            </div>
-        </div>
+            <span class="slider round"></span>
+            </label>
+   
+    </div>
+
 <div className="big-card-btns">
 <button className="btn" onClick={(e)=> handleSubmit(e)}> Save Changes</button>
 <button className="btn" onClick={onClick}> Close</button>

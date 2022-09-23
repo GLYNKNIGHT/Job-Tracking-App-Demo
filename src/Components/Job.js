@@ -4,7 +4,7 @@ import BigCard from './BigCard'
 const Job = ({jobTitle, company, link, id, applied, interview, offer}) => {
     
 const [bigCard , setBigCard] = useState(false)
-//const [newLink, setNewLink] = useState({link})
+
 
 const handleDelete = ({id}) =>{
     fetch(`http://localhost:8000/jobs/${id}`, {
@@ -13,10 +13,6 @@ const handleDelete = ({id}) =>{
 }
 
 
-const handleEdit = ({id}) => {
-
-
-}
 
     return <><div className="job" >
     <h3>{company}</h3>
@@ -24,13 +20,13 @@ const handleEdit = ({id}) => {
     <a href={link}>Link to Post</a>
     <div className='progress'>
     <p>Applied </p>
-    {(applied === true)? <p>✔️</p> :<p>❌</p>}
+    {(applied === true)? <p>✔️</p> : <p>❌</p>}
     <p>|</p>
     <p >Interview </p>
-    {(interview === true)?<p >✔️</p> :<p>❌</p>}
+    {(interview === true)? <p>✔️</p> : <p>❌</p>}
     <p>|</p>
     <p>Offer</p>
-    {(offer === true)? <p>✔️</p>:<p>❌</p>}
+    {(offer === true)? <p>✔️</p> : <p>❌</p>}
     </div>
        <div className='job-btns'>
     <button onClick={()=> setBigCard(true)}>Edit</button>
