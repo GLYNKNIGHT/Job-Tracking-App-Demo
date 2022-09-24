@@ -1,16 +1,31 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import BigCard from './BigCard'
 
-const Job = ({jobTitle, company, link, id, applied, interview, offer,bigCard, setBigCard}) => {
+const Job = ({jobTitle, 
+                company, 
+                link, 
+                id, 
+                applied, 
+                interview, 
+                offer,
+                bigCard, 
+                setBigCard, 
+                dateApplied, 
+                notes}) => {
     
 
 
 
-const handleDelete = ({id}) =>{
-    fetch(`http://localhost:8000/jobs/${id}`, {
-    method: 'DELETE',
-   }).then(()=> console.log(`Item ${id} Deleted`))
-}
+    const handleDelete = ({id}) =>{
+        
+        fetch(`http://localhost:8000/jobs/${id}`, {
+        method: 'DELETE',
+       }).then(()=> console.log(`Item ${id} Deleted`))
+    
+    }
+    
+
+
 
 
 
@@ -41,6 +56,8 @@ const handleDelete = ({id}) =>{
             interview={interview}
             offer={offer}
             setBigCard={setBigCard}
+            dateApplied={dateApplied}
+            notes={notes}
             //onClick={()=>setBigCard(false)}
             />
             

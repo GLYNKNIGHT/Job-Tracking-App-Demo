@@ -1,6 +1,6 @@
 import { useState, useReducer } from "react";
 
-const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBigCard, onClick}) =>{
+const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBigCard, dateApplied, notes}) =>{
 
  const [editApplied, setEditApplied] =useState(applied)
  const [editInterview,setEditInterview] = useState(interview)
@@ -9,6 +9,7 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBig
  const [appliedChecked, setAppliedChecked] = useState(applied)
  const [interviewChecked, setInterviewChecked] = useState(interview)
  const [offerChecked, setOfferChecked] = useState(interview)
+ const [newNote, setNewNote] =useState('')
  const [, forceUpdate] = useReducer(x => x + 1, 0);
 
 
@@ -21,7 +22,8 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBig
     const handleSubmit = (e) =>{
         const job = { applied :editApplied,  
                       interview: editInterview, 
-                      offer: editOffer};
+                      offer: editOffer,
+                      notes: [...notes, newNote]};
    console.log(job)
    
      fetch(`http://localhost:8000/jobs/${id}`, {
@@ -88,7 +90,17 @@ return <div className="big-card">
             </label>
    
     </div>
-
+<p>Date Applied : {dateApplied}</p>
+<p>{notes}</p>
+<div>
+        <label>Job Title</label>
+            <input
+                className="input" 
+                type='text' 
+                placeholder=' Job Title' 
+                value={newNote}
+                onChange={(e)=> setNewNote(e.target.value)}/>
+                </div>
 <div className="big-card-btns">
 <button className="btn" onClick={(e)=> handleSubmit(e)}> Save Changes</button>
 <button className="btn" onClick={()=>handleClick()}> Close</button>

@@ -7,6 +7,8 @@
       "applied": true,
       "interview": false,
       "offer": false,
+      "dateApplied": "19/08/22",
+      "notes": [],
       "id": 2
     },
     {
@@ -16,6 +18,8 @@
       "applied": true,
       "interview": false,
       "offer": false,
+      "dateApplied": "19/08/22",
+      "notes": [],
       "id": 3
     },
     {
@@ -25,6 +29,8 @@
       "applied": true,
       "interview": false,
       "offer": false,
+      "dateApplied": "16/09/22",
+      "notes": [],
       "id": 4
     },
     {
@@ -34,6 +40,8 @@
       "applied": true,
       "interview": false,
       "offer": false,
+      "dateApplied": "19/08/22",
+      "notes": [],
       "id": 5
     },
     {
@@ -43,6 +51,8 @@
       "applied": true,
       "interview": false,
       "offer": false,
+      "dateApplied": "19/08/22",
+      "notes": [],
       "id": 6
     },
     {
@@ -52,6 +62,8 @@
       "applied": false,
       "interview": false,
       "offer": false,
+      "dateApplied": "19/08/22",
+      "notes": [],
       "id": 7
     },
     {
@@ -61,7 +73,59 @@
       "applied": false,
       "interview": false,
       "offer": false,
+      "dateApplied": "19/08/22",
+      "notes": [],
       "id": 8
+    },
+    {
+      "jobTitle": "Test",
+      "company": "Test",
+      "link": "tEST",
+      "applied": false,
+      "interview": false,
+      "offer": true,
+      "dateApplied": "21/06/1985",
+      "notes": [
+        "k",
+        "j",
+        "s",
+        "d",
+        "b",
+        "f",
+        ";",
+        "j",
+        "s",
+        "d",
+        "b",
+        ";",
+        "k",
+        "\\",
+        "b",
+        "g",
+        "w",
+        "i",
+        "f",
+        "h",
+        "d",
+        "s",
+        "u",
+        "b",
+        "d",
+        "s",
+        "i",
+        "f",
+        "b",
+        "a",
+        ";",
+        "f",
+        "i",
+        "u",
+        "s",
+        "f",
+        "s",
+        "Add a new nosxjxk"
+      ],
+      "id": 9
     }
   ]
 }

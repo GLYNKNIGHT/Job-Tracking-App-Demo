@@ -16,6 +16,8 @@ return<div className='jobs-list'>
                               offer={job.offer}
                               bigCard={bigCard}
                               setBigCard={setBigCard}
+                              dateApplied={job.dateApplied}
+                              notes={job.notes}
                               />))}
 </div>
 
