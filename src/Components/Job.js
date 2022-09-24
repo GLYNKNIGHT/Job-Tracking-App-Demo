@@ -30,10 +30,12 @@ const Job = ({jobTitle,
 
 
     return <><div className="job" >
-    <h3>{company}</h3>
+    <div className='job-header'>
+    <h3>{company}</h3> 
+    <a href={link}><img width='20px' src='./hyperlink.png' alt='hyperlink'/></a>
+    </div>
     <p>{jobTitle}</p>
-    <a href={link}>Link to Post</a>
-    <div className='progress'>
+        <div className='progress'>
     <p>Applied </p>
     {(applied === true)? <p>✔️</p> : <p>❌</p>}
     <p>|</p>

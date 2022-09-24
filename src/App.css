@@ -83,6 +83,10 @@
    margin: 10px;
    font-size: 1.2rem;
 }
+.job-header{
+  display: flex;
+  justify-content: space-evenly;
+}
  .progress{
   display: flex;
   justify-content: space-evenly;
