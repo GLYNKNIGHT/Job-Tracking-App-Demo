@@ -8,10 +8,13 @@ const Input = () => {
     const [interview, setInterview] = useState(false)
     const [offer, setOffer] = useState(false) 
     const [dateApplied, setDateApplied] =useState('')
-    const [notes, setNotes] = useState ('')
+    const [note, setNote] = useState('')
+    const [notes, setNotes] = useState ([])
 
 
 const handleSubmit = (e) =>{
+    setNotes(notes.push(note))
+
       const job = {jobTitle, company, link, applied, interview, offer, dateApplied, notes};
  console.log(job)
    fetch('http://localhost:8000/jobs', {
@@ -22,6 +25,11 @@ const handleSubmit = (e) =>{
     
    
      }
+
+const handleNotes =(e) =>{
+    setNote(e.target.value)
+
+}
 
 
     return<div >
@@ -101,8 +109,8 @@ const handleSubmit = (e) =>{
                 className="input-text-area"
                 type='text-area' 
                 placeholder=' Notes' 
-                value={notes}
-                onChange={(e)=> setNotes(e.target.value)}  /> 
+                value={note}
+                onChange={(e)=> handleNotes(e)}  /> 
             </div>
 
         <div className="btn-div">

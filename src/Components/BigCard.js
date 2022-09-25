@@ -87,11 +87,13 @@ return <div className="big-card">
    
     </div>
 <p>Date Applied : {dateApplied}</p>
-<ul>
-{notes.map((note) =><p>{note}</p>)}
-</ul>
+<div className="notes">
+  <h4>Notes</h4>
+      
+      {notes.map((note) =><div className="note"><p>{note}</p></div>)}
+  
 <div>
-        <label>Add Notes</label>
+        <h4>Add Notes</h4>
             <input
                 className="input" 
                 type='text' 
@@ -99,6 +101,7 @@ return <div className="big-card">
                 value={newNote}
                 onChange={(e)=> setNewNote(e.target.value)}/>
                 </div>
+  </div>
 <div className="big-card-btns">
   <button className="btn" onClick={(e)=> handleSubmit(e)}> Save Changes</button>
   <button className="btn" onClick={()=> setBigCard(false)}> Close</button>

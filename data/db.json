@@ -74,21 +74,24 @@
       "interview": false,
       "offer": false,
       "dateApplied": "19/08/22",
-      "notes": [
-        "This is a new notes",
-        "this is another new note"
-      ],
+      "notes": [],
       "id": 8
     },
     {
-      "jobTitle": "test ",
-      "company": "test company",
-      "link": "www.test.com",
+      "jobTitle": "test",
+      "company": "test",
+      "link": "test",
       "applied": true,
-      "interview": false,
+      "interview": true,
       "offer": false,
       "dateApplied": "21/06/22",
-      "notes": "This is a note",
+      "notes": [
+        "This is a note",
+        "This is another note",
+        "this is a third note",
+        "this is a 4th note",
+        null
+      ],
       "id": 9
     }
   ]
