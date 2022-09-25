@@ -36,7 +36,7 @@ const [bigCard , setBigCard] = useState(false)
      <div className='icons'>       
         <a className='link' href={link} ><img width='20px' src='./hyperlink.png' alt='hyperlink'/></a>
             {(notes.length > 0 )?<div className='comments-icon'>
-                                              <img src='./comments.png' alt='comments'/>
+                                              <img src='./edit.png' width='20px' alt='comments'/>
                                  <p>{notes.length}</p></div>
                                  : null
                                  }
