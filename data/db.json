@@ -78,22 +78,6 @@
       "dateApplied": "19/08/22",
       "notes": [],
       "id": 8
-    },
-    {
-      "jobTitle": "test",
-      "company": "test",
-      "link": "test",
-      "applied": true,
-      "interview": true,
-      "offer": false,
-      "dateApplied": "21/06/22",
-      "notes": [
-        "This is a note",
-        "This is another note",
-        "this is a third note",
-        "this is a 4th note"
-      ],
-      "id": 9
     }
   ]
 }

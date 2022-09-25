@@ -73,20 +73,22 @@
   justify-content: space-evenly;
   background-color: rgb(248, 248, 248);
   padding:15px;
-   gap: 20px;
+  gap: 20px;
   overflow-y: scroll;
 }
 
 .job{
   width: 100%;
-  min-height: 300px;
+  height: auto;
   background-color: rgb(255, 255, 255);
   border: none;
   border-bottom: 0.7px solid rgb(48, 48, 48);
-   margin: 10px;
-   font-size: 1.2rem;
-   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 10px;
+  font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
 }
+
 .job-header{
   display: flex;
   justify-content: space-evenly;
@@ -97,11 +99,23 @@
   justify-content: space-evenly;
   align-items: center;
 }
-
+.icons {
+  position: absolute;
+  right:20px; 
+  top:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .comments-icon{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5px;
+}
+
+.comments-icon p{
+  margin: 0;
 }
 
 .progress{
@@ -116,7 +130,8 @@
 .job-btns{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin: 20px;
+
  
 }
 
@@ -130,6 +145,7 @@
 }
 
 .big-card{
+  z-index: 10;
   position: fixed;
   width: 800px;
   height: 600px;

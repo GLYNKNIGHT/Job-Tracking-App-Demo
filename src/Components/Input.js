@@ -8,14 +8,14 @@ const Input = () => {
     const [interview, setInterview] = useState(false)
     const [offer, setOffer] = useState(false) 
     const [dateApplied, setDateApplied] =useState('')
-    const [note, setNote] = useState('')
+    const [note, setNote] = useState()
     const [notes, setNotes] = useState ([])
 
 
 const handleSubmit = (e) =>{
-    setNotes(notes.push(note))
+setNotes(notes.push(note))
 
-      const job = {jobTitle, company, link, applied, interview, offer, dateApplied, notes};
+const job = {jobTitle, company, link, applied, interview, offer, dateApplied, notes};
  console.log(job)
    fetch('http://localhost:8000/jobs', {
     method: 'POST',
