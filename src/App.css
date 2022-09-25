@@ -87,6 +87,8 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+
  .progress{
   display: flex;
   justify-content: space-evenly;
@@ -115,7 +117,7 @@
 .big-card{
   position: fixed;
   width: 800px;
-  height: 400px;
+  height: 500px;
   padding: 10px;
   border: 3px solid #575757;
   border-radius: 10px ;

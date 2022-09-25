@@ -1,6 +1,6 @@
-import { useState, useReducer } from "react";
+import { useState } from "react";
 
-const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBigCard, dateApplied, notes}) =>{
+const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBigCard, dateApplied, notes, handleEdit}) =>{
 
  const [editApplied, setEditApplied] =useState(applied)
  const [editInterview,setEditInterview] = useState(interview)
@@ -8,29 +8,25 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBig
 
  const [appliedChecked, setAppliedChecked] = useState(applied)
  const [interviewChecked, setInterviewChecked] = useState(interview)
- const [offerChecked, setOfferChecked] = useState(interview)
- const [newNote, setNewNote] =useState('')
- const [, forceUpdate] = useReducer(x => x + 1, 0);
+ const [offerChecked, setOfferChecked] = useState(offer)
+ const [newNote, setNewNote] =useState()
+const [updatedNotes, setUpdatedNotes]  = useState(notes)
 
 
-
- //trying to force re-render when big card closes
- function handleClick() {
-   forceUpdate();
-   setBigCard(false)
- }
     const handleSubmit = (e) =>{
+      setUpdatedNotes(notes.push(newNote))
+
         const job = { applied :editApplied,  
                       interview: editInterview, 
                       offer: editOffer,
-                      notes: [...notes, newNote]};
-   console.log(job)
+                      notes: updatedNotes}; //this needs work
+    console.log(job)
    
      fetch(`http://localhost:8000/jobs/${id}`, {
       method: 'PATCH',
       headers:{'Content-Type': 'application/json'},
       body: JSON.stringify(job)
-     }).then(()=> console.log(job))
+     }).then(()=> console.log(job), handleEdit())
       
      
        }
@@ -91,9 +87,11 @@ return <div className="big-card">
    
     </div>
 <p>Date Applied : {dateApplied}</p>
-<p>{notes}</p>
+<ul>
+{notes.map((note) =><p>{note}</p>)}
+</ul>
 <div>
-        <label>Job Title</label>
+        <label>Add Notes</label>
             <input
                 className="input" 
                 type='text' 
@@ -102,8 +100,8 @@ return <div className="big-card">
                 onChange={(e)=> setNewNote(e.target.value)}/>
                 </div>
 <div className="big-card-btns">
-<button className="btn" onClick={(e)=> handleSubmit(e)}> Save Changes</button>
-<button className="btn" onClick={()=>handleClick()}> Close</button>
+  <button className="btn" onClick={(e)=> handleSubmit(e)}> Save Changes</button>
+  <button className="btn" onClick={()=> setBigCard(false)}> Close</button>
 </div>
 </div>
 }

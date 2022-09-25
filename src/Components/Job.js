@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import BigCard from './BigCard'
 
 const Job = ({jobTitle, 
@@ -8,31 +8,28 @@ const Job = ({jobTitle,
                 applied, 
                 interview, 
                 offer,
-                bigCard, 
-                setBigCard, 
                 dateApplied, 
-                notes}) => {
+                notes, 
+            handleEdit}) => {
     
-
+const [bigCard , setBigCard] = useState(false)
 
 
     const handleDelete = ({id}) =>{
         
         fetch(`http://localhost:8000/jobs/${id}`, {
         method: 'DELETE',
-       }).then(()=> console.log(`Item ${id} Deleted`))
+       }).then(()=> console.log(`Item ${id} Deleted`), handleEdit())
     
     }
     
-
-
-
+   
 
 
     return <><div className="job" >
     <div className='job-header'>
     <h3>{company}</h3> 
-    <a href={link}><img width='20px' src='./hyperlink.png' alt='hyperlink'/></a>
+    <a className='link' href={link}><img width='30px' src='./hyperlink.png' alt='hyperlink'/></a>
     </div>
     <p>{jobTitle}</p>
         <div className='progress'>
@@ -60,6 +57,7 @@ const Job = ({jobTitle,
             setBigCard={setBigCard}
             dateApplied={dateApplied}
             notes={notes}
+            handleEdit={handleEdit}
             //onClick={()=>setBigCard(false)}
             />
             

@@ -1,9 +1,18 @@
 import Job from './Job.js'
-import { useState } from 'react'
 
-const List = ({jobs}) => {
 
-   const [bigCard , setBigCard] = useState(false)
+const List = ({jobs, setJobs}) => {
+
+const handleEdit = ()=> {
+   fetch('http://localhost:8000/jobs')
+   .then(res =>{
+     return res.json();
+   })
+   .then((data)=> {console.log(data); setJobs(data)});
+
+
+}
+
 
 return<div className='jobs-list'>
    {jobs.map((job) => (<Job key={job.id} 
@@ -14,10 +23,9 @@ return<div className='jobs-list'>
                               applied={job.applied} 
                               interview={job.interview}
                               offer={job.offer}
-                              bigCard={bigCard}
-                              setBigCard={setBigCard}
                               dateApplied={job.dateApplied}
                               notes={job.notes}
+                              handleEdit={handleEdit}
                               />))}
 </div>
 

@@ -21,7 +21,7 @@ const [jobs, setJobs] = useState(null)
     <h1 className='title'>Progress</h1>
     <div className='main'>
    <Input />
-   {jobs && <List jobs={jobs}/>}
+   {jobs && <List jobs={jobs} setJobs={setJobs}/>}
 
    </div>
     </div>
