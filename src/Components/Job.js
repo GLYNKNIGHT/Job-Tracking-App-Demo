@@ -28,10 +28,12 @@ const [bigCard , setBigCard] = useState(false)
 
     return <><div className="job" >
     <div className='job-header'>
-    <h3>{company}</h3> 
-    <a className='link' href={link}><img width='30px' src='./hyperlink.png' alt='hyperlink'/></a>
+            <h3>{company}</h3> 
     </div>
-    <p>{jobTitle}</p>
+    <div className='job-title'>
+            <p>{jobTitle}</p><a className='link' href={link}><img width='20px' src='./hyperlink.png' alt='hyperlink'/></a>
+    </div>
+    {(notes.length > 0 )?<div className='comments-icon'> <img src='./comments.png' alt='comments'/><p>{notes.length}</p></div>: null}
         <div className='progress'>
     <p>Applied </p>
     {(applied === true)? <p>✔️</p> : <p>❌</p>}

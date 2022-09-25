@@ -8,7 +8,9 @@
       "interview": false,
       "offer": false,
       "dateApplied": "19/08/22",
-      "notes": [],
+      "notes": [
+        "Told hiring manager like my CV and is interested"
+      ],
       "id": 2
     },
     {
@@ -89,8 +91,7 @@
         "This is a note",
         "This is another note",
         "this is a third note",
-        "this is a 4th note",
-        null
+        "this is a 4th note"
       ],
       "id": 9
     }
