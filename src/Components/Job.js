@@ -28,7 +28,7 @@ const [bigCard , setBigCard] = useState(false)
    
 
 
-    return <><div className="job" >
+    return <><div className="job" style={{ backgroundColor: notProgressed === true ? "gray" : "white" }} >
     <div className='job-header'>
             {(notProgressed === false)?<h2 >{company}</h2>: <h2 style={{textDecoration: 'line-through'}}>{company}</h2>}
     </div>

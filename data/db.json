@@ -1,146 +1,19 @@
 {
   "jobs": [
     {
-      "jobTitle": "Junior Softwear Eng",
-      "company": "Hamiltonian Dynamics",
-      "salary": "£35000-£40000",
-      "link": "https://trello.com/c/nQSJ1ke4/2-hamilton-dynamics-graduate-software-engineer-x2",
-      "applied": true,
-      "interview": false,
-      "offer": false,
-      "dateApplied": "19/08/22",
-      "notes": [
-        "Told hiring manager like my CV and is interested 12/09/22"
-      ],
-      "notProgressed": false,
-      "id": 2
-    },
-    {
-      "jobTitle": "Junior Dev",
-      "company": "Bamboo Auctions ",
-      "salary": "£35000-£40000",
-      "link": "https://trello.com/c/ECe1NY5l/17-bamboo-auctions-junior-engineer-x1",
-      "applied": true,
-      "interview": false,
-      "offer": false,
-      "dateApplied": "19/08/22",
-      "notes": [],
-      "notProgressed": false,
-      "id": 3
-    },
-    {
-      "jobTitle": "Software Engineer",
-      "company": "Department for Work and Pensions",
-      "salary": "£35000-£40000",
-      "link": "https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=am9ibGlzdF92aWV3X3ZhYz0xODAyMzcwJnBhZ2VjbGFzcz1Kb2JzJm93bmVyPTUwNzAwMDAmc2VhcmNocGFnZT0xJnBhZ2VhY3Rpb249dmlld3ZhY2J5am9ibGlzdCZ1c2Vyc2VhcmNoY29udGV4dD0xMDI1NDQwNyZzZWFyY2hzb3J0PXNjb3JlJm93bmVydHlwZT1mYWlyJnJlcXNpZz0xNjYzNzcwNDgzLTQ3MzZmY2EzY2Q2MzgzNGZmMDA0NGJjN2RjYzZiMjBhNjkyMmQwOTU=",
-      "applied": true,
-      "interview": false,
-      "offer": false,
-      "dateApplied": "16/09/22",
-      "notes": [
-        "DIDN'T GET"
-      ],
-      "notProgressed": true,
-      "id": 4
-    },
-    {
-      "jobTitle": "JavaScript Developer",
-      "company": "Raytheon",
-      "salary": "£35000-£40000",
-      "link": "https://uk.indeed.com/viewjob?from=app-tracker-post_apply-appcard&hl=en&jk=4bf036f5c8878ed0&tk=1gdirgrg7kf6m801",
-      "applied": true,
-      "interview": false,
-      "offer": false,
-      "dateApplied": "19/08/22",
-      "notes": [],
-      "notProgressed": false,
-      "id": 5
-    },
-    {
-      "jobTitle": "Software Engineer, Front End",
-      "company": "AutoTrader",
-      "salary": "£35000-£40000",
-      "link": "https://careers.autotrader.co.uk/jobs/technology/software-engineer-front-end/4056319101",
-      "applied": true,
-      "interview": false,
-      "offer": false,
-      "dateApplied": "19/08/22",
-      "notes": [
-        "Have sent CV with no email or contact number on!"
-      ],
-      "notProgressed": false,
-      "id": 6
-    },
-    {
-      "jobTitle": "Product Engineering: Software Graduate",
-      "company": "JLR",
-      "salary": "£35000-£40000",
-      "link": "https://www.jaguarlandrovercareers.com/job/Manchester-Product-Engineering-Software-Graduate-Manchester/848521401/?feedId=227201&utm_source=Indeed&utm_campaign=JLR_Indeed&source=Indeed",
-      "applied": false,
-      "interview": false,
-      "offer": false,
-      "dateApplied": "19/08/22",
-      "notes": [],
-      "notProgressed": false,
-      "id": 7
-    },
-    {
-      "jobTitle": "Software Engineer",
-      "company": "BBC",
-      "salary": "N/A",
-      "link": "https://careerssearch.bbc.co.uk/jobs/job/Software-Engineer-Silver/63100",
-      "applied": false,
-      "interview": false,
-      "offer": false,
-      "dateApplied": "19/08/22",
-      "notes": [],
-      "notProgressed": false,
-      "id": 8
-    },
-    {
-      "jobTitle": "Junior Frontend developer",
-      "company": "Reqiva Ltd",
-      "salary": "£35000-£40000",
-      "link": "https://uk.indeed.com/viewjob?from=app-tracker-post_apply-appcard&hl=en&jk=7b2624e359928695&tk=1gdstf77ek274800",
-      "applied": true,
-      "interview": false,
-      "offer": false,
-      "dateApplied": "26/09/22",
-      "notes": [
-        "Remote to Maidenhead"
-      ],
-      "notProgressed": false,
-      "id": 9
-    },
-    {
-      "jobTitle": "Junior Front End Developer",
-      "company": "InHealth",
-      "salary": "£25000-£30000",
-      "link": "https://uk.indeed.com/viewjob?from=app-tracker-post_apply-appcard&hl=en&jk=890aa7073eb85c06&tk=1gdt16sbcorrh800",
-      "applied": true,
-      "interview": false,
-      "offer": false,
-      "dateApplied": "26/09/22",
-      "notes": [
-        "Job ask for minimum 1 year exp."
-      ],
-      "notProgressed": false,
-      "id": 10
-    },
-    {
-      "jobTitle": "Test ",
+      "jobTitle": "Test",
       "company": "Test",
-      "salary": "£30000-£35000",
-      "link": "www.alink.com",
+      "salary": "Under £25000",
+      "link": "sdfjsdjbhsdjk",
       "applied": true,
       "interview": false,
       "offer": false,
-      "dateApplied": "29/09/22",
+      "dateApplied": "26/09/21",
       "notes": [
-        "Some Notes"
+        null
       ],
       "notProgressed": false,
-      "id": 11
+      "id": 1
     }
   ]
 }

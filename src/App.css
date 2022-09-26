@@ -115,7 +115,7 @@
 
 .job{
   width: 95%;
-  height: auto;
+  max-height: 25vh;
   background-color: rgb(255, 255, 255);
   border: none;
   border-bottom: 0.7px solid rgb(48, 48, 48);
