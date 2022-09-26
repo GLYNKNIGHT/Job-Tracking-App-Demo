@@ -1,19 +1,34 @@
 {
   "jobs": [
     {
-      "jobTitle": "Test",
-      "company": "Test",
+      "jobTitle": "Awesome company person",
+      "company": "A company",
+      "salary": "£40000 +",
+      "link": "https://www.linkedin.com/in/glyn-knight/",
+      "applied": true,
+      "interview": true,
+      "offer": true,
+      "dateApplied": "26/09/22",
+      "notes": [
+        "This is an awesome job. "
+      ],
+      "notProgressed": false,
+      "id": 2
+    },
+    {
+      "jobTitle": "Head of awesomeness ",
+      "company": "B Company",
       "salary": "Under £25000",
-      "link": "sdfjsdjbhsdjk",
+      "link": "https://www.linkedin.com/in/glyn-knight/",
       "applied": true,
       "interview": false,
       "offer": false,
-      "dateApplied": "26/09/21",
+      "dateApplied": "25/09/22",
       "notes": [
-        null
+        "Remote role"
       ],
       "notProgressed": false,
-      "id": 1
+      "id": 3
     }
   ]
 }
