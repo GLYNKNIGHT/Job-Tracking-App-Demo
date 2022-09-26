@@ -1,30 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Mukta:wght@300&display=swap');
+
 .App {
   text-align: center;
  background-color: white;
- font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ font-family: 'Inter', sans-serif;
+ 
 }
 
-.title{
-  height: 10vh;
-  font-size: 3rem;
+.header{
+  height: 12vh;
+  background-color: rgb(45, 45, 45);
+  border-bottom:  10px double white ;
+
+}
+
+.header-image{
+ height: 150px;
 }
 
 .main{
   display: flex;
   justify-content: space-evenly;
   height:80vh;
+  background-color: rgb(80, 80, 80);
+  padding-top: 20px;
 }
 
 .add-job{
-  width:30vw;
+  width:20vw;
   height:80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
   text-align: left;
   font-size: 1.5rem;
-    padding:15px;
+  background-color: rgb(248, 248, 248);
+    padding:25px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px grey;
 }
 
 .input{
@@ -35,14 +49,16 @@
   border: none;
   border-bottom: 0.5px solid black;
 
+
 }
 
 .input-text-area{
-  font-size: 1rem;
-  height: 4rem;
+  font-size: 1.2rem;
+  height: 7rem;
   width:95%;
   margin-top:10px;
   border-radius: 5px;
+  
 }
 
 .btn-div{
@@ -66,19 +82,39 @@
 }
 
 .jobs-list{
-  width:50vw;
+  width:65vw;
   height:80vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-evenly;
   background-color: rgb(248, 248, 248);
-  padding:15px;
-  gap: 20px;
+  padding:25px;
+  gap: 10px;
   overflow-y: scroll;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px grey;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0,128,0);
+  border-radius: 8px;
+}
+
+
 .job{
-  width: 100%;
+  width: 95%;
   height: auto;
   background-color: rgb(255, 255, 255);
   border: none;
@@ -99,23 +135,22 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
 .icons {
   position: absolute;
-  right:20px; 
-  top:20px;
+  left:20px; 
+  bottom:20px;
   display: flex;
-  flex-direction: column;
-  justify-content: left;
-}
-.comments-icon{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5px;
+  flex-direction: row;
+  gap:25px;
 }
 
+.comments-icon{
+  display: flex;
+  }
+
 .comments-icon p{
-  font-size: 12px;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -130,17 +165,19 @@
 
 .job-btns{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: right;
+  gap:10px;
   margin: 20px;
+  margin-top:40px
 
  
 }
 
 .job-btns button{
-  width: 150px;
+  width: 100px;
   height: 2rem;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: green;
   color: white;
 }
@@ -148,18 +185,19 @@
 .big-card{
   z-index: 10;
   position: fixed;
-  width: 800px;
-  height: 600px;
-  padding: 10px;
+  width: 1000px;
+  height: 700px;
+  padding: 20px;
   border: 3px solid #575757;
   border-radius: 10px ;
   background-color: white;
   top: 50%;
   left: 50%;
   margin-top: -300px;  /* Negative half of height. */
-  margin-left: -400px; 
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-left: -800px; 
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   overflow-y: scroll;
+  font-size: 1.5rem;
 }
 
 .big-card-btns{
@@ -170,6 +208,7 @@
 
 .notes{
   text-align: left;
+
 }
 
 .note{

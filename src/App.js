@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import Header from './Components/Header.js';
 import Input from './Components/Input.js';
 import List from './Components/List'
 import './App.css';
@@ -18,11 +19,12 @@ const [jobs, setJobs] = useState(null)
 
   return (
     <div className="App">
-    <h1 className='title'>Progress</h1>
+    
+    <Header />
     <div className='main'>
-   <Input />
+   
    {jobs && <List jobs={jobs} setJobs={setJobs}/>}
-
+   <Input />
    </div>
     </div>
   );

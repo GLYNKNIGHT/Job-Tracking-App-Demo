@@ -26,7 +26,7 @@ const [updatedNotes, setUpdatedNotes]  = useState(notes)
       method: 'PATCH',
       headers:{'Content-Type': 'application/json'},
       body: JSON.stringify(job)
-     }).then(()=> console.log(job), handleEdit())
+     }).then(()=> handleEdit())
       
      
        }
@@ -54,9 +54,10 @@ const [updatedNotes, setUpdatedNotes]  = useState(notes)
 
  
 return <div className="big-card">
-<h2>{company}</h2>
-<p>{jobTitle}</p>
+<h1>{company}</h1>
+<h3>{jobTitle}</h3>
 <a href={link}>Link to Post</a>
+<p>Date Applied : {dateApplied}</p>
 <div className='progress'>
     
     <p>Applied </p>
@@ -86,7 +87,7 @@ return <div className="big-card">
             </label>
    
     </div>
-<p>Date Applied : {dateApplied}</p>
+
 <div className="notes">
   <h4>Notes</h4>
       
@@ -97,7 +98,7 @@ return <div className="big-card">
             <input
                 className="input" 
                 type='text' 
-                placeholder=' Job Title' 
+                placeholder=' Add note' 
                 value={newNote}
                 onChange={(e)=> setNewNote(e.target.value)}/>
                 </div>

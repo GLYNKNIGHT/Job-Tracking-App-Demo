@@ -13,11 +13,12 @@ const Input = () => {
 
 
 const handleSubmit = (e) =>{
-setNotes(notes.push(note))
 
-const job = {jobTitle, company, link, applied, interview, offer, dateApplied, notes};
- console.log(job)
-   fetch('http://localhost:8000/jobs', {
+    setNotes(notes.push(note))
+
+    const job = {jobTitle, company, link, applied, interview, offer, dateApplied, notes};
+    console.log(job)
+    fetch('http://localhost:8000/jobs', {
     method: 'POST',
     headers:{'Content-Type': 'application/json'},
     body: JSON.stringify(job)
@@ -28,14 +29,14 @@ const job = {jobTitle, company, link, applied, interview, offer, dateApplied, no
 
 const handleNotes =(e) =>{
     setNote(e.target.value)
-
+    
 }
 
 
     return<div >
     <form  onSubmit={handleSubmit}>
     <div className="add-job">
-    <h3>New Job</h3>
+    <h3 >Add New Job</h3>
         <div>
         <label>Job Title</label>
             <input
@@ -66,33 +67,33 @@ const handleNotes =(e) =>{
         </div>
         <div className="checkboxes">
                 <div>
-                <label>Applied     </label>
-                <label class="switch">
+                <label>Applied  </label>
+                <label className="switch">
                 <input type="checkbox"  onChange={(e)=> setApplied(!applied)} />
-                <span class="slider round"></span>
+                <span className="slider round"></span>
                 </label>
                 </div>
 
                 <div>
-                <label>Interview     </label>
-                <label class="switch">
+                <label>Interview    </label>
+                <label className="switch">
                 <input type="checkbox"  onChange={(e)=> setInterview(!interview)} />
-                <span class="slider round"></span>
+                <span className="slider round"></span>
                 </label>
                 </div>
 
                 <div>
-                <label>Offer     </label>
-                <label class="switch">
+                <label>Offer    </label>
+                <label className="switch">
                 <input type="checkbox"  onChange={(e)=> setOffer(!offer)} />
-                <span class="slider round"></span>
+                <span className="slider round"></span>
                 </label>
                 </div>
 
             
         </div>
             <div>
-            <label>Date Applied</label>
+            <label>Date Added</label>
             <input 
                 className="input"
                 type='text' 

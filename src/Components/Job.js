@@ -28,16 +28,16 @@ const [bigCard , setBigCard] = useState(false)
 
     return <><div className="job" >
     <div className='job-header'>
-            <h3>{company}</h3> 
+            <h2>{company}</h2> 
     </div>
     <div className='job-title'>
-            <p>{jobTitle}</p>
+            <h3>{jobTitle}</h3>
     </div>
      <div className='icons'>       
-        <a className='link' href={link} ><img width='20px' src='./hyperlink.png' alt='hyperlink'/></a>
+        <a className='link' href={link} ><img width='23px' src='./hyperlink.png' alt='hyperlink'/></a>
             {(notes.length > 0 )?<div className='comments-icon'>
-                                              <img src='./edit.png' width='20px' alt='comments'/>
-                                 <p>{notes.length}</p></div>
+                                        <img src='./edit.png' width='21px' alt='comments'/>
+                                        <p>{notes.length}</p></div>
                                  : null
                                  }
 
@@ -68,8 +68,7 @@ const [bigCard , setBigCard] = useState(false)
             dateApplied={dateApplied}
             notes={notes}
             handleEdit={handleEdit}
-            //onClick={()=>setBigCard(false)}
-            />
+                   />
             
     : null}
     </>
