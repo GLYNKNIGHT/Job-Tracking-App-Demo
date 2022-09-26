@@ -3,6 +3,7 @@ import BigCard from './BigCard'
 
 const Job = ({jobTitle, 
                 company, 
+                salary,
                 link, 
                 id, 
                 applied, 
@@ -31,12 +32,12 @@ const [bigCard , setBigCard] = useState(false)
             <h2>{company}</h2> 
     </div>
     <div className='job-title'>
-            <h3>{jobTitle}</h3>
+            <h3>{jobTitle}</h3><h4>{salary}</h4>
     </div>
      <div className='icons'>       
-        <a className='link' href={link} ><img width='23px' src='./hyperlink.png' alt='hyperlink'/></a>
-            {(notes.length > 0 )?<div className='comments-icon'>
-                                        <img src='./edit.png' width='21px' alt='comments'/>
+        <a className='link' href={link} ><img width='50px' src='./link.png' alt='hyperlink'/></a>
+            {(notes.length > 0 /*&& notes[0] != null*/ )?<div className='comments-icon'>
+                                        <img width='50px' src='./note.png'  alt='comments'/>
                                         <p>{notes.length}</p></div>
                                  : null
                                  }

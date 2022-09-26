@@ -18,6 +18,7 @@ return<div className='jobs-list'>
    {jobs.map((job) => (<Job key={job.id} 
                               id={job.id} 
                               jobTitle={job.jobTitle} 
+                              salary={job.salary}
                               company={job.company} 
                               link={job.link} 
                               applied={job.applied} 

@@ -22,9 +22,8 @@ const [jobs, setJobs] = useState(null)
     
     <Header />
     <div className='main'>
-   
-   {jobs && <List jobs={jobs} setJobs={setJobs}/>}
-   <Input />
+      {jobs && <List jobs={jobs} setJobs={setJobs}/>}
+      <Input />
    </div>
     </div>
   );
