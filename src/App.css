@@ -149,6 +149,30 @@
   display: flex;
   }
 
+.hidden-notes{
+  display: none;
+}
+
+.comments-icon:hover .hidden-notes{
+  display: block;
+  position: fixed;
+  z-index: 10;
+  width: 30vw;
+  height: 15vw;
+  background-color: white;
+  border: 0.5px solid black;
+  border-radius: 8px;
+ 
+}
+
+.hidden-notes-list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+
 .comments-icon p{
   font-size: 1rem;
   margin: 0;

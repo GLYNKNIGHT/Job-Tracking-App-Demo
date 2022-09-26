@@ -32,12 +32,18 @@ const [bigCard , setBigCard] = useState(false)
             <h2>{company}</h2> 
     </div>
     <div className='job-title'>
-            <h3>{jobTitle}</h3><h4>{salary}</h4>
+            <h3>{jobTitle}</h3><p>{salary}</p>
     </div>
      <div className='icons'>       
         <a className='link' href={link} ><img width='50px' src='./link.png' alt='hyperlink'/></a>
             {(notes.length > 0 /*&& notes[0] != null*/ )?<div className='comments-icon'>
                                         <img width='50px' src='./note.png'  alt='comments'/>
+                                        <div className='hidden-notes'>
+                                        <h2>{company} - Notes</h2>
+                                                <div className='hidden-notes-list'>     
+                                                {notes.map((note)=><h4> - {note}</h4>)}
+                                                </div>
+                                        </div>
                                         <p>{notes.length}</p></div>
                                  : null
                                  }

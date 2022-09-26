@@ -11,8 +11,7 @@
       "dateApplied": "19/08/22",
       "notes": [
         "Told hiring manager like my CV and is interested",
-        "This is a note",
-        "efskjfns;kjf"
+        "This is a note"
       ],
       "id": 2
     },
@@ -37,7 +36,9 @@
       "interview": false,
       "offer": false,
       "dateApplied": "16/09/22",
-      "notes": [],
+      "notes": [
+        "DID'NT GET"
+      ],
       "id": 4
     },
     {
@@ -87,6 +88,20 @@
       "dateApplied": "19/08/22",
       "notes": [],
       "id": 8
+    },
+    {
+      "jobTitle": "Junior Frontend developer",
+      "company": "Reqiva Ltd",
+      "salary": "£35000-£40000",
+      "link": "https://uk.indeed.com/viewjob?from=app-tracker-post_apply-appcard&hl=en&jk=7b2624e359928695&tk=1gdstf77ek274800",
+      "applied": true,
+      "interview": false,
+      "offer": false,
+      "dateApplied": "26/09/22",
+      "notes": [
+        "Remote to Maidenhead"
+      ],
+      "id": 9
     }
   ]
 }
