@@ -18,7 +18,7 @@ const Input = () => {
 const handleSubmit = (e) =>{
    
 
-    const job = {jobTitle, company, salary, link, applied, interview, offer, dateApplied, notes:[note]};
+    const job = {jobTitle, company, salary, link, applied, interview, offer, dateApplied, notes:[note], notProgressed: false};
     
     fetch('http://localhost:8000/jobs', {
     method: 'POST',

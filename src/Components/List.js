@@ -27,6 +27,7 @@ return<div className='jobs-list'>
                               dateApplied={job.dateApplied}
                               notes={job.notes}
                               handleEdit={handleEdit}
+                              notProgressed={job.notProgressed}
                               />))}
 </div>
 

@@ -11,7 +11,8 @@ const Job = ({jobTitle,
                 offer,
                 dateApplied, 
                 notes, 
-            handleEdit}) => {
+                handleEdit, 
+                notProgressed}) => {
     
 const [bigCard , setBigCard] = useState(false)
 
@@ -29,7 +30,7 @@ const [bigCard , setBigCard] = useState(false)
 
     return <><div className="job" >
     <div className='job-header'>
-            <h2>{company}</h2> 
+            {(notProgressed === false)?<h2 >{company}</h2>: <h2 style={{textDecoration: 'line-through'}}>{company}</h2>}
     </div>
     <div className='job-title'>
             <h3>{jobTitle}</h3><p>{salary}</p>
@@ -60,8 +61,8 @@ const [bigCard , setBigCard] = useState(false)
         {(offer === true)? <p>✔️</p> : <p>❌</p>}
     </div>
     <div className='job-btns'>
-            <button onClick={()=> setBigCard(true)}>Edit</button>
-            <button onClick={()=> handleDelete({id})}> Delete</button>
+            <button onClick={()=> setBigCard(true)}>Update</button>
+            <button onClick={()=> handleDelete({id})}> Remove</button>
     </div>
     </div>
     {(bigCard === true)? <BigCard id={id}
@@ -75,6 +76,7 @@ const [bigCard , setBigCard] = useState(false)
             dateApplied={dateApplied}
             notes={notes}
             handleEdit={handleEdit}
+           
                    />
             
     : null}

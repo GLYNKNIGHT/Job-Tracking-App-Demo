@@ -5,7 +5,6 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBig
  const [editApplied, setEditApplied] =useState(applied)
  const [editInterview,setEditInterview] = useState(interview)
  const [editOffer, setEditOffer] = useState(offer)
-
  const [appliedChecked, setAppliedChecked] = useState(applied)
  const [interviewChecked, setInterviewChecked] = useState(interview)
  const [offerChecked, setOfferChecked] = useState(offer)
@@ -13,7 +12,7 @@ const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBig
 const [updatedNotes, setUpdatedNotes]  = useState(notes)
 
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = () =>{
       setUpdatedNotes(notes.push(newNote))
 
         const job = { applied :editApplied,  
@@ -31,7 +30,20 @@ const [updatedNotes, setUpdatedNotes]  = useState(notes)
      
        }
   
-  
+      const handleNotProgressed = () =>{
+       
+      const job = { notProgressed: true}; //this needs work
+      console.log(job)
+     
+       fetch(`http://localhost:8000/jobs/${id}`, {
+        method: 'PATCH',
+        headers:{'Content-Type': 'application/json'},
+        body: JSON.stringify(job)
+       }).then(()=> handleEdit())
+        
+       
+         }
+    
 
 
     const updateApplied = (e) =>{
@@ -91,10 +103,10 @@ return <div className="big-card">
 <div className="notes">
   <h4>Notes</h4>
       
-      {notes.map((note) =><div className="note"><p>{note}</p></div>)}
+      {notes.map((note) =><div className="note"><p> - {note}</p></div>)}
   
-<div>
-        <h4>Add Notes</h4>
+<div >
+        <h5 style={{marginBottom: 0}}>Add Notes</h5>
             <input
                 className="input" 
                 type='text' 
@@ -104,7 +116,8 @@ return <div className="big-card">
                 </div>
   </div>
 <div className="big-card-btns">
-  <button className="btn" onClick={(e)=> handleSubmit(e)}> Save Changes</button>
+  <button className="btn" onClick={()=> handleSubmit()}> Save Changes</button>
+  <button className="btn" onClick={()=> handleNotProgressed()}>Not Progressed</button>
   <button className="btn" onClick={()=> setBigCard(false)}> Close</button>
 </div>
 </div>

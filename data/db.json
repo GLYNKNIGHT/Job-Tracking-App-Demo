@@ -10,9 +10,9 @@
       "offer": false,
       "dateApplied": "19/08/22",
       "notes": [
-        "Told hiring manager like my CV and is interested",
-        "This is a note"
+        "Told hiring manager like my CV and is interested 12/09/22"
       ],
+      "notProgressed": false,
       "id": 2
     },
     {
@@ -25,6 +25,7 @@
       "offer": false,
       "dateApplied": "19/08/22",
       "notes": [],
+      "notProgressed": false,
       "id": 3
     },
     {
@@ -37,8 +38,9 @@
       "offer": false,
       "dateApplied": "16/09/22",
       "notes": [
-        "DID'NT GET"
+        "DIDN'T GET"
       ],
+      "notProgressed": true,
       "id": 4
     },
     {
@@ -51,6 +53,7 @@
       "offer": false,
       "dateApplied": "19/08/22",
       "notes": [],
+      "notProgressed": false,
       "id": 5
     },
     {
@@ -62,7 +65,10 @@
       "interview": false,
       "offer": false,
       "dateApplied": "19/08/22",
-      "notes": [],
+      "notes": [
+        "Have sent CV with no email or contact number on!"
+      ],
+      "notProgressed": false,
       "id": 6
     },
     {
@@ -75,6 +81,7 @@
       "offer": false,
       "dateApplied": "19/08/22",
       "notes": [],
+      "notProgressed": false,
       "id": 7
     },
     {
@@ -87,6 +94,7 @@
       "offer": false,
       "dateApplied": "19/08/22",
       "notes": [],
+      "notProgressed": false,
       "id": 8
     },
     {
@@ -101,7 +109,23 @@
       "notes": [
         "Remote to Maidenhead"
       ],
+      "notProgressed": false,
       "id": 9
+    },
+    {
+      "jobTitle": "Junior Front End Developer",
+      "company": "InHealth",
+      "salary": "£25000-£30000",
+      "link": "https://uk.indeed.com/viewjob?from=app-tracker-post_apply-appcard&hl=en&jk=890aa7073eb85c06&tk=1gdt16sbcorrh800",
+      "applied": true,
+      "interview": false,
+      "offer": false,
+      "dateApplied": "26/09/22",
+      "notes": [
+        "Job ask for minimum 1 year exp."
+      ],
+      "notProgressed": false,
+      "id": 10
     }
   ]
 }
