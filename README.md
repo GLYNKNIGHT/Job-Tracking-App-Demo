@@ -1,7 +1,7 @@
 # Progress
 
   
-When I starting to look for my first development job I wanted a way to keep a track of the jobs I was interest in, or had appied for (Progress). So rather than use a speadsheet I built this app.
+When I started to look for my first development job I wanted a way to keep a track of the jobs I was interest in, or had appied for (Progress). So rather than use a speadsheet I built this app.
 
 The app allows users to add and remove each job as well as add notes and update if they have been invited for interview or received an offer.
 
