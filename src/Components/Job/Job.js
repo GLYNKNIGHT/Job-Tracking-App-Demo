@@ -60,8 +60,8 @@ return <>
                 {(offer === true)? <p>✔️</p> : <p>❌</p>}
         </div>
         <div className='job-btns'>
-                <button onClick={()=> setBigCard(true)}>Update</button>
-                <button onClick={()=> handleDelete({id})}> Remove</button>
+                <button className={`update${company}`} onClick={()=> setBigCard(true)}>Update</button>
+                <button className={`remove${company}`} onClick={()=> handleDelete({id})}> Remove</button>
         </div>
     </div>
 

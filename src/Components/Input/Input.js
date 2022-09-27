@@ -32,6 +32,7 @@ return<div >
             <label>Company</label> 
                 <input 
                     className="input" 
+                    id='company'
                     type='text' 
                     placeholder='Company' 
                     value={company}
@@ -41,6 +42,7 @@ return<div >
             <label>Job Title</label>
                 <input
                     className="input" 
+                    id='title'
                     type='text' 
                     placeholder=' Job Title' 
                     value={jobTitle}
@@ -61,6 +63,7 @@ return<div >
             <label>Link</label>
                 <input 
                     className="input"
+                    id='link'
                     type='text' 
                     placeholder=' Link' 
                     value={link}
@@ -70,7 +73,7 @@ return<div >
             <div>
                 <label>Applied  </label>
                     <label className="switch">
-                    <input type="checkbox"  onChange={(e)=> setApplied(!applied)} />
+                    <input type="checkbox" id='applied'  onChange={(e)=> setApplied(!applied)} />
                     <span className="slider round"></span>
                     </label>
                 </div>
@@ -93,6 +96,7 @@ return<div >
                 <label>Date Added</label>
                     <input 
                         className="input"
+                        id='date'
                         type='text' 
                         placeholder=' DD/MM/YY' 
                         value={dateApplied}
@@ -102,6 +106,7 @@ return<div >
                 <label>Notes</label>
                     <input 
                         className="input-text-area"
+                        id='notes'
                         type='text-area' 
                         placeholder=' Notes' 
                         value={note}
