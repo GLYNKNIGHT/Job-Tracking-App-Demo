@@ -9,7 +9,7 @@ The app allows users to add and remove each job as well as add notes and update 
  
 Built in React the app is designed be be used in the browser on laptop/desktop (To run the front end use; *npm start*) . Progress uses JSON-Server as a development backend. To run the JSON Server use : *npx json-server -p 8000 -w data/db.json*
 
-  
+I have also used Cypress and React Testing Library for testing    
   
 
 **Features I would like to add;**
