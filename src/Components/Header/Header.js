@@ -2,7 +2,7 @@
 const Header = () =>{
 
     return<div className="header">
-     <img className='header-image' src='./logo.png' alt='progress' />
+         <img className='header-image' src='./logo.png' alt='progress' />
      
     </div>
 }

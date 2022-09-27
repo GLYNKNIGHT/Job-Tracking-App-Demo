@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
-import Header from './Components/Header.js';
-import Input from './Components/Input.js';
-import List from './Components/List'
+import Header from './Components/Header/Header.js';
+import Input from './Components/Input/Input.js';
+import List from './Components/List/List'
 import './App.css';
 
 function App() {
@@ -14,7 +14,6 @@ const [jobs, setJobs] = useState(null)
       return res.json();
     })
     .then((data)=> {console.log(data); setJobs(data)});
-
   }, [])
 
   return (

@@ -1,34 +1,67 @@
 {
   "jobs": [
     {
-      "jobTitle": "Awesome company person",
-      "company": "A company",
-      "salary": "£40000 +",
-      "link": "https://www.linkedin.com/in/glyn-knight/",
-      "applied": true,
-      "interview": true,
-      "offer": true,
-      "dateApplied": "26/09/22",
+      "jobTitle": "Civil Servant ",
+      "company": "Civil Service ",
+      "salary": "£25000-£30000",
+      "link": "https://www.civilservicejobs.service.gov.uk/csr/index.cgi",
+      "applied": false,
+      "interview": false,
+      "offer": false,
+      "dateApplied": "22/09/22",
       "notes": [
-        "This is an awesome job. "
+        "Great pension"
+      ],
+      "notProgressed": false,
+      "id": 1
+    },
+    {
+      "jobTitle": "Store Manager",
+      "company": "Tesco",
+      "salary": "£30000-£35000",
+      "link": "https://www.tesco-careers.com/",
+      "applied": true,
+      "interview": false,
+      "offer": false,
+      "dateApplied": "05/08/22",
+      "notes": [
+        "Deadline - 15/10/22"
       ],
       "notProgressed": false,
       "id": 2
     },
     {
-      "jobTitle": "Head of awesomeness ",
-      "company": "B Company",
-      "salary": "Under £25000",
-      "link": "https://www.linkedin.com/in/glyn-knight/",
+      "jobTitle": "Fibre Professional",
+      "company": "Open Reach",
+      "salary": "£25000-£30000",
+      "link": "https://www.openreach.com/careers",
       "applied": true,
-      "interview": false,
+      "interview": true,
       "offer": false,
-      "dateApplied": "25/09/22",
+      "dateApplied": "16/09/22",
       "notes": [
-        "Remote role"
+        "Paid for training ",
+        "Interview booked 08/11/22"
       ],
       "notProgressed": false,
       "id": 3
+    },
+    {
+      "jobTitle": "Store Manager",
+      "company": "Aldi",
+      "salary": "£40000 +",
+      "link": "https://www.aldirecruitment.co.uk/stores/store-manager?gclid=CjwKCAjwvsqZBhAlEiwAqAHEleprpXYacob5ooKVVqS8iv0P8tieG2nReeMjOqVx56C6hcdQeAMJOhoCfr0QAvD_BwE",
+      "applied": true,
+      "interview": true,
+      "offer": false,
+      "dateApplied": "03/09/22",
+      "notes": [
+        "Great stating salary. ",
+        "Got interview 15/09/22",
+        "Not successful - will ask for feedback "
+      ],
+      "notProgressed": true,
+      "id": 4
     }
   ]
 }

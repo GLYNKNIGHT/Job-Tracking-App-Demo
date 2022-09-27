@@ -1,5 +1,4 @@
-import Job from './Job.js'
-
+import Job from '../Job/Job.js'
 
 const List = ({jobs, setJobs}) => {
 
