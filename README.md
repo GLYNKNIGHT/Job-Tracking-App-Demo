@@ -13,5 +13,5 @@ Built in React the app is designed be be used in the browser on laptop/desktop (
   
 
 **Features I would like to add;**
-- Add sort feature to list the jobs by date, salary, or progress
-- Make responive for mobile
+- Add sort feature to list the jobs by date, salary, or progress.
+- Make responive for mobile.
