@@ -1,0 +1,42 @@
+
+
+.bigCard{
+    z-index: 10;
+    position: fixed;
+    width: 1000px;
+    height: 700px;
+    padding: 20px;
+    border: 3px solid #575757;
+    border-radius: 10px ;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;  /* Negative half of height. */
+    margin-left: -800px; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow-y: scroll;
+    font-size: 1.5rem;
+  }
+  
+  .bigCardBtns{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  
+  .bigCardBtns button{
+    font-size: 1.3rem;
+    height: 2.4rem;
+    cursor: pointer;
+    }
+  
+  
+  .notes{
+    text-align: left;
+  
+  }
+  
+  .note{
+    border-bottom: 0.5px solid #575757;
+  }

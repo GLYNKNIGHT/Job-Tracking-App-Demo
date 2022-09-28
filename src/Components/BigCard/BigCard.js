@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import styles from './BidCard.module.css'
 const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBigCard, dateApplied, notes, handleEdit}) =>{
 
 const [editApplied, setEditApplied] =useState(applied)
@@ -60,7 +60,7 @@ const [updatedNotes, setUpdatedNotes]  = useState(notes)
     }
 
  
-return <div className="big-card">
+return <div className={styles.bigCard}>
         <h1>{company}</h1>
         <h3>{jobTitle}</h3>
         <a href={link}>Link to {company} Post</a>
@@ -95,9 +95,9 @@ return <div className="big-card">
    
   </div>
 
-  <div className="notes">
+  <div className={styles.notes}>
     <h4>Notes</h4>
-        {notes.map((note) =><div className="note"><p> - {note}</p></div>)}
+        {notes.map((note) =><div className={styles.notes}><p> - {note}</p></div>)}
     
       <div>
           <h5 style={{marginBottom: 0}}>Add Notes</h5>
@@ -109,7 +109,7 @@ return <div className="big-card">
                   onChange={(e)=> setNewNote(e.target.value)}/>
                   </div>
     </div>
-    <div className="big-card-btns">
+    <div className={styles.bigCardBtns}>
         <button className="btn" onClick={()=> handleSubmit()}> Save Changes</button>
         <button className="btn" onClick={()=> handleNotProgressed()}>Not Progressed</button>
         <button className="btn" onClick={()=> setBigCard(false)}> Close</button>

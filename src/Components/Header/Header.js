@@ -1,8 +1,8 @@
-
+import styles from './Header.module.css'
 const Header = () =>{
 
-    return<div className="header">
-         <img className='header-image' src='./logo.png' alt='progress' />
+    return<div className={styles.header}>
+         <img className={styles.header_image} src='./logo.png' alt='progress' />
      
     </div>
 }

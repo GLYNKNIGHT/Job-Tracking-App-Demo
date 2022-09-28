@@ -1,4 +1,5 @@
 import { useState } from "react"
+import styles from './Input.module.css'
 
 const Input = () => {
     const [jobTitle, setJobTitle] = useState('')
@@ -26,7 +27,7 @@ const handleSubmit = (e) =>{
 
 return<div >
     <form  onSubmit={handleSubmit}>
-        <div className="add-job">
+        <div className={styles.add_job}>
         <h3 >Add New Job</h3>
         <div>
             <label>Company</label> 
@@ -105,14 +106,14 @@ return<div >
         <div>
                 <label>Notes</label>
                     <input 
-                        className="input-text-area"
+                        className={styles.input_text_area}
                         id='notes'
                         type='text-area' 
                         placeholder=' Notes' 
                         value={note}
                         onChange={(e)=> setNote(e.target.value)}  /> 
                 </div>
-        <div className="btn-div">
+        <div className={styles.btn_div}>
                 <button className="btn">Add Job</button>
             </div>
      </div>

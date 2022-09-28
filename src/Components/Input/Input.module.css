@@ -1,0 +1,30 @@
+.add_job{
+    width:20vw;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: rgb(248, 248, 248);
+      padding:25px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 8px;
+      box-shadow: inset 0 0 5px grey;
+  }
+  
+  
+  .input_text_area{
+    font-size: 1.2rem;
+    height: 7rem;
+    width:95%;
+    margin-top:10px;
+    border-radius: 5px;
+    
+  }
+  
+  .btn_div{
+    display: flex;
+    justify-content: flex-end;
+  }
+  

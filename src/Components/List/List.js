@@ -1,4 +1,5 @@
 import Job from '../Job/Job.js'
+import styles from './List.module.css'
 
 const List = ({jobs, setJobs}) => {
 
@@ -13,7 +14,7 @@ const handleEdit = ()=> {
 }
 
 
-return<div className='jobs-list'>
+return<div className={styles.jobs_list}>
    {jobs.map((job) => (<Job key={job.id} 
                               id={job.id} 
                               jobTitle={job.jobTitle} 

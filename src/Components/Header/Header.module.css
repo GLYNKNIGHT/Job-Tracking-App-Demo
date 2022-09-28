@@ -1,0 +1,11 @@
+.header{
+    height: 12vh;
+    background-color: rgb(45, 45, 45);
+    border-bottom:  10px double white ;
+  
+  }
+  
+  .header_image{
+   height: 150px;
+  }
+  

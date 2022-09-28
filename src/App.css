@@ -26,20 +26,14 @@
   padding-top: 20px;
 }
 
-.add-job{
-  width:20vw;
-  height:80vh;
+.progress{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-  text-align: left;
-  font-size: 1.5rem;
-  background-color: rgb(248, 248, 248);
-    padding:25px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 8px;
-    box-shadow: inset 0 0 5px grey;
-}
+  justify-content: space-evenly;
+  background-color: #e7e7e7;
+  margin: 10px;
+  border-radius: 3px;
+  border-bottom: 0.5px solid #575757;
+ } 
 
 .input{
   font-size: 1.2rem;
@@ -50,20 +44,6 @@
   border-bottom: 0.5px solid black;
 
 
-}
-
-.input-text-area{
-  font-size: 1.2rem;
-  height: 7rem;
-  width:95%;
-  margin-top:10px;
-  border-radius: 5px;
-  
-}
-
-.btn-div{
-  display: flex;
-  justify-content: flex-end;
 }
 
 .btn
@@ -81,19 +61,7 @@
   justify-content: space-evenly;
 }
 
-.jobs-list{
-  width:65vw;
-  height:80vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-evenly;
-  background-color: rgb(248, 248, 248);
-  padding:25px;
-  gap: 10px;
-  overflow-y: scroll;
-  border-radius: 8px;
-  box-shadow: inset 0 0 5px grey;
-}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -112,150 +80,6 @@
   border-radius: 8px;
 }
 
-
-.job{
-  width: 95%;
-  max-height: 25vh;
-  background-color: rgb(255, 255, 255);
-  border: none;
-  border-bottom: 0.7px solid rgb(48, 48, 48);
-  margin: 10px;
-  font-size: 1.2rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  position: relative;
-}
-
-.job-header{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.job-title{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.icons {
-  position: absolute;
-  left:20px; 
-  bottom:20px;
-  display: flex;
-  flex-direction: row;
-  gap:25px;
-}
-
-.comments-icon{
-  display: flex;
-  }
-
-.hidden-notes{
-  display: none;
-}
-
-.comments-icon:hover .hidden-notes{
-  display:block;
-  position: fixed;
-  position: fixed;
-  width: 700px;
-  height: 400px;
-  padding: 20px;
-  border: 3px solid #575757;
-  border-radius: 10px ;
-  background-color: white;
-  top: 50%;
-  left: 50%;
-  margin-top: -350px;  /* Negative half of height. */
-  margin-left: -600px; 
-  z-index: 10;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  background-color: white;
-  border: 0.5px solid black;
-  border-radius: 8px;
- 
-}
-
-.hidden-notes-list{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-
-.comments-icon p{
-  font-size: 1rem;
-  margin: 0;
-}
-
-.progress{
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #e7e7e7;
-  margin: 10px;
-  border-radius: 3px;
-  border-bottom: 0.5px solid #575757;
- } 
-
-.job-btns{
-  display: flex;
-  justify-content: right;
-  gap:10px;
-  margin: 20px;
-  margin-top:40px
-
- 
-}
-
-.job-btns button{
-  width: 100px;
-  height: 2rem;
-  border-radius: 10px;
-  font-size: 1.2rem;
-  background-color: green;
-  color: white;
-}
-
-.big-card{
-  z-index: 10;
-  position: fixed;
-  width: 1000px;
-  height: 700px;
-  padding: 20px;
-  border: 3px solid #575757;
-  border-radius: 10px ;
-  background-color: white;
-  top: 50%;
-  left: 50%;
-  margin-top: -300px;  /* Negative half of height. */
-  margin-left: -800px; 
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  overflow-y: scroll;
-  font-size: 1.5rem;
-}
-
-.big-card-btns{
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  
-}
-
-.big-card-btns button{
-  font-size: 1.3rem;
-  height: 2.4rem;
-  cursor: pointer;
-  }
-
-
-.notes{
-  text-align: left;
-
-}
-
-.note{
-  border-bottom: 0.5px solid #575757;
-}
 
 /* The switch - the box around the slider */
 .switch {

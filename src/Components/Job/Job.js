@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import BigCard from '../BigCard/BigCard'
+import styles from './Job.module.css'
 
 const Job = ({jobTitle, 
                 company, 
@@ -27,20 +28,20 @@ const handleDelete = ({id}) =>{
 
 
 return <>
-<div className="job" style={{ backgroundColor: notProgressed === true ? "gray" : "white" }} >
-    <div className='job-header'>
+<div className={styles.job} style={{ backgroundColor: notProgressed === true ? "gray" : "white" }} >
+    <div className={styles.job_header }>
             {(notProgressed === false)? <h2 >{company}</h2>:<h2 style={{textDecoration: 'line-through'}}>{company}</h2>}
     </div>
-    <div className='job-title'>
+    <div className={styles.job_title}>
             <h3>{jobTitle}</h3><p>{salary}</p>
     </div>
-     <div className='icons'>       
-        <a className='link' href={link} ><img width='50px' src='./link.png' alt='hyperlink'/></a>
-            {(notes.length > 0)?<div className='comments-icon'>
+     <div className={styles.icons}>       
+        <a className={styles.link} href={link} ><img width='50px' src='./link.png' alt='hyperlink'/></a>
+            {(notes.length > 0)?<div className={styles.comments_icon}>
                                         <img width='50px' src='./note.png'  alt='comments'/>
-                                        <div className='hidden-notes'>
+                                        <div className={styles.hidden_notes}>
                                         <h2>{company} - Notes</h2>
-                                                <div className='hidden-notes-list'>  {/*will show on hover of icon*/}   
+                                                <div className={styles.hidden_notes_list}>  {/*will show on hover of icon*/}   
                                                         {notes.map((note)=><h4> - {note}</h4>)}
                                                 </div>
                                         </div>
@@ -59,7 +60,7 @@ return <>
                 <p>Offer</p>
                 {(offer === true)? <p>✔️</p> : <p>❌</p>}
         </div>
-        <div className='job-btns'>
+        <div className={styles.job_btns}>
                 <button className={`update${company}`} onClick={()=> setBigCard(true)}>Update</button>
                 <button className={`remove${company}`} onClick={()=> handleDelete({id})}> Remove</button>
         </div>
