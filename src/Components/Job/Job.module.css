@@ -104,3 +104,12 @@
     color: white;
   }
   
+  @media screen and (max-width: 600px){
+    .job{
+       width:90%;
+        height: 440px;
+        margin: 5 auto;
+        font-size: 4vw;
+    }
+    
+}

@@ -136,3 +136,35 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media screen and (max-width: 600px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:150vh;
+    background-color: rgb(80, 80, 80);
+    padding-top: 20px;
+  }
+  
+
+  .input{
+    font-size: 4vw;
+    height: 50px;
+    width:95%;
+    margin-top:10px;
+    border: none;
+    border-bottom: 0.5px solid black;
+  }
+  
+  .btn
+   {
+    width: 10vw;
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 4vw;
+    background-color: green;
+    color: white;
+  }
+  
+}

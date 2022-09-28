@@ -3,6 +3,7 @@ import Header from './Components/Header/Header.js';
 import Input from './Components/Input/Input.js';
 import List from './Components/List/List'
 import './App.css';
+import JobCarousel from './Components/JobCarousel/JobCarousel.js';
 
 function App() {
 const [jobs, setJobs] = useState(null)
@@ -22,8 +23,10 @@ const [jobs, setJobs] = useState(null)
     <Header />
     <div className='main'>
       {jobs && <List jobs={jobs} setJobs={setJobs}/>}
+      {jobs&& <JobCarousel jobs={jobs} setJobs={setJobs}/>}
       <Input />
    </div>
+  
     </div>
   );
 }
