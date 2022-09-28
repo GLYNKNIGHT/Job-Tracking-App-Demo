@@ -20,6 +20,7 @@
 .progress{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background-color: #e7e7e7;
   margin: 10px;
   border-radius: 3px;

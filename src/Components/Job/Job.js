@@ -36,7 +36,7 @@ return <>
             <h3>{jobTitle}</h3><p>{salary}</p>
     </div>
      <div className={styles.icons}>       
-        <a className={styles.link} href={link} ><img  src='./link.png' alt='hyperlink'/></a>
+        <a className={styles.link} href={link} target='blank'><img  src='./link.png' alt='hyperlink'/></a>
             {(notes.length > 0)?<div className={styles.comments_icon}>
                                         <img src='./note.png'  alt='comments'/>
                                         <div className={styles.hidden_notes}>
