@@ -71,21 +71,21 @@ return<div >
                     onChange={(e)=> setLink(e.target.value)}  /> 
             </div>
         <div className="checkboxes">
-            <div>
+            <div className={styles.checkbox_label}>
                 <label className={styles.label}>Applied  </label>
                     <label className="switch">
                     <input type="checkbox" id='applied'  onChange={(e)=> setApplied(!applied)} />
                     <span className="slider round"></span>
                     </label>
                 </div>
-            <div>
+            <div className={styles.checkbox_label}>
                 <label className={styles.label}>Interview    </label>
                     <label className="switch">
                     <input type="checkbox"  onChange={(e)=> setInterview(!interview)} />
                     <span className="slider round"></span>
                     </label>
                 </div>
-            <div>
+            <div className={styles.checkbox_label}>
                 <label className={styles.label}>Offer    </label>
                     <label className="switch">
                     <input type="checkbox"  onChange={(e)=> setOffer(!offer)} />

@@ -26,6 +26,16 @@
   border-bottom: 0.5px solid #575757;
  } 
 
+ .progress_mobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #e7e7e7;
+  margin: 10px;
+  border-radius: 3px;
+  border-bottom: 0.5px solid #575757;
+ }
+
 .input{
   font-size: 0.9vw;
   height: 50px;
@@ -144,13 +154,13 @@ input:checked + .slider:before {
     justify-content: space-evenly;
     height:150vh;
     background-color: rgb(80, 80, 80);
-    padding-top: 20px;
+    padding-top: 15px;
   }
   
 
   .input{
     font-size: 4vw;
-    height: 50px;
+    height: 40px;
     width:95%;
     margin-top:10px;
     border: none;
@@ -166,5 +176,15 @@ input:checked + .slider:before {
     background-color: green;
     color: white;
   }
+
+  .progress_mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #e7e7e7;
+    margin: 10px;
+    border-radius: 3px;
+    border-bottom: 0.5px solid #575757;
+   }
   
 }

@@ -45,11 +45,23 @@
 
     .input_text_area{
       font-size: 4vw;
-      height: 7rem;
+      height: 5rem;
       width:95%;
       margin-top:10px;
       border-radius: 5px;
       
+    }
+   
+    .checkbox_label{
+      display: flex;
+      flex-direction: column;
+      width: 80px;
+      margin-top: 15px;
+      align-items: center;
+      background-color: white;
+      padding:5px;
+      border: 0.3px solid gray;
+      border-radius: 5px;
     }
     
 }

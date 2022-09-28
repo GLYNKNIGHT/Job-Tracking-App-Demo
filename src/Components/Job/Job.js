@@ -51,14 +51,20 @@ return <>
 
     </div>
         <div className='progress'>
+        <div className={styles.progress_mobile}>
                 <p>Applied </p>
                 {(applied === true)? <p>✔️</p> : <p>❌</p>}
+                </div>
                 <p>|</p>
+                <div className={styles.progress_mobile}>
                 <p >Interview </p>
                 {(interview === true)? <p>✔️</p> : <p>❌</p>}
+                </div>
                 <p>|</p>
+                <div className={styles.progress_mobile}>
                 <p>Offer</p>
                 {(offer === true)? <p>✔️</p> : <p>❌</p>}
+                </div>
         </div>
         <div className={styles.job_btns}>
                 <button className={`update${company}`} onClick={()=> setBigCard(true)}>Update</button>

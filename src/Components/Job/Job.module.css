@@ -2,7 +2,7 @@
 
 .job{
     width: 95%;
-    max-height: 25vh;
+    max-height: 30vh;
     background-color: rgb(255, 255, 255);
     border: none;
     border-bottom: 0.7px solid rgb(48, 48, 48);
@@ -90,8 +90,7 @@
     gap:10px;
     margin: 20px;
     margin-top:40px
-  
-   
+    
   }
   
   .job_btns button{
@@ -106,10 +105,43 @@
   
   @media screen and (max-width: 600px){
     .job{
-       width:90%;
-        height: 440px;
+        height: 80%;
+        max-height: 80%;
         margin: 5 auto;
         font-size: 4vw;
+        width: 95%;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-bottom: 0.7px solid rgb(48, 48, 48);
+        margin: 10px;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        position: relative;
     }
     
+    .icons img{
+      width:10vw
+    }
+
+    .job_btns{
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      position: absolute;
+      right:0px; 
+      bottom:0px;
+      gap:10px;
+      margin: 10px;
+      margin-top:40px
+      
+    }
+
+    .job_btns button{
+    
+      width: 15vw;
+      height: 2rem;
+      border-radius: 10px;
+      font-size: 3vw;
+      background-color: green;
+      color: white;
+    }
 }

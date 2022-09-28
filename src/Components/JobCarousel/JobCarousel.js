@@ -24,9 +24,10 @@ const JobCarousel = ({jobs})=>{
     }
   };
 
-return <div className={styles.carousel}>
+return <div className={styles.carousel_container}>
     <Carousel
-      swipeable={false}
+      className={styles.carousel}
+      swipeable={true}
       draggable={false}
       showDots={true}
       responsive={responsive}
@@ -37,7 +38,7 @@ return <div className={styles.carousel}>
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-40-px"
+      itemClass={styles.job_card}
     >
 
 {jobs.map((job) => <Job key={job.id} 
