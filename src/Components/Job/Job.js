@@ -36,9 +36,9 @@ return <>
             <h3>{jobTitle}</h3><p>{salary}</p>
     </div>
      <div className={styles.icons}>       
-        <a className={styles.link} href={link} ><img width='50px' src='./link.png' alt='hyperlink'/></a>
+        <a className={styles.link} href={link} ><img  src='./link.png' alt='hyperlink'/></a>
             {(notes.length > 0)?<div className={styles.comments_icon}>
-                                        <img width='50px' src='./note.png'  alt='comments'/>
+                                        <img src='./note.png'  alt='comments'/>
                                         <div className={styles.hidden_notes}>
                                         <h2>{company} - Notes</h2>
                                                 <div className={styles.hidden_notes_list}>  {/*will show on hover of icon*/}   

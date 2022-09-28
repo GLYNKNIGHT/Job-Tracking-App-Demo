@@ -30,7 +30,7 @@ return<div >
         <div className={styles.add_job}>
         <h3 >Add New Job</h3>
         <div>
-            <label>Company</label> 
+            <label className={styles.label}>Company</label> 
                 <input 
                     className="input" 
                     id='company'
@@ -40,7 +40,7 @@ return<div >
                     onChange={(e)=> setCompany(e.target.value)} /> 
                 </div>
         <div>
-            <label>Job Title</label>
+            <label className={styles.label}>Job Title</label>
                 <input
                     className="input" 
                     id='title'
@@ -50,7 +50,7 @@ return<div >
                     onChange={(e)=> setJobTitle(e.target.value)}/>
             </div>
         <div>
-            <label>Salary</label>
+            <label className={styles.label}>Salary</label>
                 <select className="input" id='salary' onChange={(e)=> setSalary(e.target.value)}>
                     <option value='N/A'>N/A</option>
                     <option value='Under £25000'> Under £25000</option>
@@ -61,7 +61,7 @@ return<div >
                 </select>
              </div>
         <div>
-            <label>Link</label>
+            <label className={styles.label}>Link</label>
                 <input 
                     className="input"
                     id='link'
@@ -72,21 +72,21 @@ return<div >
             </div>
         <div className="checkboxes">
             <div>
-                <label>Applied  </label>
+                <label className={styles.label}>Applied  </label>
                     <label className="switch">
                     <input type="checkbox" id='applied'  onChange={(e)=> setApplied(!applied)} />
                     <span className="slider round"></span>
                     </label>
                 </div>
             <div>
-                <label>Interview    </label>
+                <label className={styles.label}>Interview    </label>
                     <label className="switch">
                     <input type="checkbox"  onChange={(e)=> setInterview(!interview)} />
                     <span className="slider round"></span>
                     </label>
                 </div>
             <div>
-                <label>Offer    </label>
+                <label className={styles.label}>Offer    </label>
                     <label className="switch">
                     <input type="checkbox"  onChange={(e)=> setOffer(!offer)} />
                     <span className="slider round"></span>
@@ -94,7 +94,7 @@ return<div >
                 </div>      
         </div>
         <div>
-                <label>Date Added</label>
+                <label className={styles.label}>Date Added</label>
                     <input 
                         className="input"
                         id='date'
@@ -104,7 +104,7 @@ return<div >
                         onChange={(e)=> setDateApplied(e.target.value)}  /> 
                 </div>
         <div>
-                <label>Notes</label>
+                <label className={styles.label}>Notes</label>
                     <input 
                         className={styles.input_text_area}
                         id='notes'

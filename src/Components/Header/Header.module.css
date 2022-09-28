@@ -2,10 +2,15 @@
     height: 12vh;
     background-color: rgb(45, 45, 45);
     border-bottom:  10px double white ;
-  
+    position: relative;
   }
   
   .header_image{
-   height: 150px;
+   width:30vw;
+   position: absolute;
+    top: 50%;
+    left:30%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   

@@ -7,7 +7,7 @@
     border: none;
     border-bottom: 0.7px solid rgb(48, 48, 48);
     margin: 10px;
-    font-size: 1.2rem;
+    font-size: 0.8vw;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: relative;
   }
@@ -26,10 +26,14 @@
   .icons {
     position: absolute;
     left:20px; 
-    bottom:20px;
+    bottom:10px;
     display: flex;
     flex-direction: row;
     gap:25px;
+  }
+
+  .icons img{
+    width:2vw
   }
   
   .comments_icon{
@@ -40,12 +44,12 @@
     display: none;
   }
   
-  .comments_icon:hover .hidden-notes{
+  .comments_icon:hover .hidden_notes{
     display:block;
     position: fixed;
     position: fixed;
-    width: 700px;
-    height: 400px;
+    width: 40vw;
+    height: 20vw;
     padding: 20px;
     border: 3px solid #575757;
     border-radius: 10px ;
@@ -80,6 +84,9 @@
   .job_btns{
     display: flex;
     justify-content: right;
+    position: absolute;
+    right:0px; 
+    bottom:0px;
     gap:10px;
     margin: 20px;
     margin-top:40px
@@ -88,10 +95,11 @@
   }
   
   .job_btns button{
-    width: 100px;
+    
+    width: 5vw;
     height: 2rem;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 0.8vw;
     background-color: green;
     color: white;
   }

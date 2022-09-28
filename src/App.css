@@ -7,17 +7,6 @@
  
 }
 
-.header{
-  height: 12vh;
-  background-color: rgb(45, 45, 45);
-  border-bottom:  10px double white ;
-
-}
-
-.header-image{
- height: 150px;
-}
-
 .main{
   display: flex;
   justify-content: space-evenly;
@@ -26,6 +15,8 @@
   padding-top: 20px;
 }
 
+
+/*Global elements*/
 .progress{
   display: flex;
   justify-content: space-evenly;
@@ -36,33 +27,28 @@
  } 
 
 .input{
-  font-size: 1.2rem;
+  font-size: 0.9vw;
   height: 50px;
   width:95%;
   margin-top:10px;
   border: none;
   border-bottom: 0.5px solid black;
-
-
 }
 
 .btn
  {
-  width: 200px;
+  width: 5vw;
   height: 2rem;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 0.8vw;
   background-color: green;
   color: white;
 }
 
-.checkboxes{
-  display: flex;
-  justify-content: space-evenly;
-}
 
 
 
+/*Scroll Bars*/
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -81,6 +67,12 @@
 }
 
 
+/*checkbox switches*/
+
+.checkboxes{
+  display: flex;
+  justify-content: space-evenly;
+}
 /* The switch - the box around the slider */
 .switch {
   position: relative;
