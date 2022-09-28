@@ -6,9 +6,9 @@
     .carousel_container{
         display: block;
         width:93%;
-        height: 50vh;
+        height: 60vh;
         margin: 0 auto;
-        background-color: white;
+        background-color: rgb(80, 80, 80);
         border-radius: 8px;
     }
     .carousel{
@@ -17,7 +17,7 @@
 
     .job_card{
         margin-top: 50px;
-        height:50vh;
+        height:65vh;
         
     }
 }
