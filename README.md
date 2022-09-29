@@ -14,4 +14,4 @@ I have also used Cypress and React Testing Library for testing
 
 **Features I would like to add;**
 - Add sort feature to list the jobs by date, salary, or progress.
-- Make responsive for mobile.
+- Make responsive for mobile (In progress).
