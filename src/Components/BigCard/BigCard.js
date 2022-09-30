@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from './BigCard.module.css'
-const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBigCard, dateApplied, notes, handleEdit}) =>{
+const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBigCard, dateAdded, notes, handleEdit}) =>{
 
 const [editApplied, setEditApplied] =useState(applied)
 const [editInterview,setEditInterview] = useState(interview)
@@ -65,7 +65,7 @@ return <div className={styles.big_card}>
         <h1>{company}</h1>
         <h3>{jobTitle}</h3>
         <a href={link}>Link to {company} Post</a>
-        <p>Date Applied : {dateApplied}</p>
+        <p>Date Added : {dateAdded}</p>
 
 <div className='progress'>
     

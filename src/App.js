@@ -5,6 +5,8 @@ import List from './Components/List/List'
 import './App.css';
 import JobCarousel from './Components/JobCarousel/JobCarousel.js';
 import Filter from './Components/Filter/Filter.js';
+import Sort from './Components/Sort/Sort'
+
 
 function App() {
 const [jobs, setJobs] = useState(null)
@@ -26,6 +28,7 @@ const [displayData, setDisplayData] = useState(null)
     <Header />
     <div className='filter-contaier'>
     <Filter jobs={jobs} displayData={displayData} setDisplayData={setDisplayData} />
+    <Sort jobs={jobs} displayData={displayData} setDisplayData={setDisplayData}/>
     </div>
     <div className='main'>
       {jobs && <List displayData={displayData} setDisplayData={setDisplayData}/>}

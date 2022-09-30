@@ -155,6 +155,7 @@ input:checked + .slider:before {
  padding-top: 2vh;
   display: flex;
   align-items: flex-start;
+  gap:15px;
 }
 
 @media screen and (max-width: 800px){

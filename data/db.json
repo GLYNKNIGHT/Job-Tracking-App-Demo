@@ -8,7 +8,7 @@
       "applied": true,
       "interview": false,
       "offer": false,
-      "dateApplied": "05/08/22",
+      "dateAdded": "2022-08-09",
       "notes": [
         "Deadline - 15/10/22"
       ],
@@ -23,7 +23,7 @@
       "applied": true,
       "interview": true,
       "offer": false,
-      "dateApplied": "16/09/22",
+      "dateAdded": "2022-09-20",
       "notes": [
         "Paid for training ",
         "Interview booked 08/11/22"
@@ -39,12 +39,12 @@
       "applied": true,
       "interview": false,
       "offer": false,
-      "dateApplied": "03/09/22",
+      "dateAdded": "2022-08-29",
       "notes": [
         "Great company pension "
       ],
       "notProgressed": true,
-      "id": 4
+      "id": 7
     },
     {
       "jobTitle": "Civil Servant",
@@ -54,7 +54,7 @@
       "applied": true,
       "interview": true,
       "offer": false,
-      "dateApplied": "03/09/22",
+      "dateAdded": "2022-09-25",
       "notes": [
         "Great company pension "
       ],
@@ -69,12 +69,27 @@
       "applied": true,
       "interview": true,
       "offer": true,
-      "dateApplied": "30/09/22",
+      "dateAdded": "2022-09-30",
       "notes": [
         "Awesome"
       ],
       "notProgressed": false,
       "id": 5
+    },
+    {
+      "jobTitle": "Job",
+      "company": "B Company ",
+      "salary": "Under £25000",
+      "link": "https://www.linkedin.com/in/glyn-knight/",
+      "applied": true,
+      "interview": false,
+      "offer": false,
+      "dateAdded": "2022-09-29",
+      "notes": [
+        "Test date"
+      ],
+      "notProgressed": false,
+      "id": 6
     }
   ]
 }

@@ -9,12 +9,12 @@ const Input = () => {
     const [applied, setApplied] = useState(false)
     const [interview, setInterview] = useState(false)
     const [offer, setOffer] = useState(false) 
-    const [dateApplied, setDateApplied] =useState('')
+    const [dateAdded, setDateAdded] =useState('')
     const [note, setNote] = useState()
    
 
 const handleSubmit = (e) =>{
-    const job = {jobTitle, company, salary, link, applied, interview, offer, dateApplied, notes:[note], notProgressed: false};
+    const job = {jobTitle, company, salary, link, applied, interview, offer, dateAdded, notes:[note], notProgressed: false};
     
     fetch('http://localhost:8000/jobs', {
     method: 'POST',
@@ -98,10 +98,9 @@ return<div >
                     <input 
                         className="input"
                         id='date'
-                        type='text' 
-                        placeholder=' DD/MM/YY' 
-                        value={dateApplied}
-                        onChange={(e)=> setDateApplied(e.target.value)}  /> 
+                        type='date' 
+                        value={dateAdded}
+                        onChange={(e)=> setDateAdded(e.target.value)}  /> 
                 </div>
         <div>
                 <label className={styles.label}>Notes</label>

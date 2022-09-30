@@ -10,7 +10,7 @@ const Job = ({jobTitle,
                 applied, 
                 interview, 
                 offer,
-                dateApplied, 
+                dateAdded, 
                 notes, 
                 handleEdit, 
                 notProgressed}) => {
@@ -42,7 +42,7 @@ return <>
                                         <div className={styles.hidden_notes}>
                                         <h2>{company} - Notes</h2>
                                                 <div className={styles.hidden_notes_list}>  {/*will show on hover of icon*/}   
-                                                        {notes.map((note)=><h4> - {note}</h4>)}
+                                                        {notes.map((note)=><h4 key={note}> - {note}</h4>)}
                                                 </div>
                                         </div>
                                         <p>{notes.length}</p></div>
@@ -80,7 +80,7 @@ return <>
             interview={interview}
             offer={offer}
             setBigCard={setBigCard}
-            dateApplied={dateApplied}
+            dateAdded={dateAdded}
             notes={notes}
             handleEdit={handleEdit}
            
