@@ -32,7 +32,7 @@
   }
   
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 800px){
     .add_job{
        width:80%;
         height: 105vh;

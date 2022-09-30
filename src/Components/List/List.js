@@ -1,21 +1,21 @@
 import Job from '../Job/Job.js'
 import styles from './List.module.css'
 
-const List = ({jobs, setJobs}) => {
+const List = ({displayData, setDisplayData}) => {
 
 const handleEdit = ()=> {
    fetch('http://localhost:8000/jobs')
    .then(res =>{
      return res.json();
    })
-   .then((data)=> {console.log(data); setJobs(data)});
+   .then((data)=> {console.log(data); setDisplayData(data)});
 
 
 }
 
 
 return<div className={styles.jobs_list}>
-   {jobs.map((job) => (<Job key={job.id} 
+   {displayData.map((job) => (<Job key={job.id} 
                               id={job.id} 
                               jobTitle={job.jobTitle} 
                               salary={job.salary}

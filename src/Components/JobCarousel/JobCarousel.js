@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import Job from '../Job/Job'
 import styles from './Carousel.module.css'
 
-const JobCarousel = ({jobs})=>{
+const JobCarousel = ({displayData})=>{
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -41,7 +41,7 @@ return <div className={styles.carousel_container}>
       itemClass={styles.job_card}
     >
 
-{jobs.map((job) => <Job key={job.id} 
+{displayData.map((job) => <Job key={job.id} 
                               id={job.id} 
                               jobTitle={job.jobTitle} 
                               salary={job.salary}

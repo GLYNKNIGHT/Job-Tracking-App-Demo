@@ -148,7 +148,16 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 600px){
+.filter-contaier{
+  width:100vw;
+  background-color: rgb(80, 80, 80);
+ padding-left: 3.2vw;
+ padding-top: 2vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 800px){
   .main{
     display: flex;
     flex-direction: column;
@@ -193,4 +202,6 @@ input:checked + .slider:before {
     margin: 5px;
     
    }
+
+
 }
