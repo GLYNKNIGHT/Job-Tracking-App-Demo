@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from './BidCard.module.css'
+import styles from './BigCard.module.css'
 const BigCard = ({id, company, jobTitle, link, applied, interview, offer, setBigCard, dateApplied, notes, handleEdit}) =>{
 
 const [editApplied, setEditApplied] =useState(applied)
@@ -12,8 +12,9 @@ const [newNote, setNewNote] =useState()
 const [updatedNotes, setUpdatedNotes]  = useState(notes)
 
 
-    const handleSubmit = () =>{
-      setUpdatedNotes(notes.push(newNote))
+const handleSubmit = () =>{
+     
+    if (newNote){setUpdatedNotes(notes.push(newNote))}
 
         const job = { applied :editApplied,  
                       interview: editInterview, 
@@ -26,7 +27,7 @@ const [updatedNotes, setUpdatedNotes]  = useState(notes)
       headers:{'Content-Type': 'application/json'},
       body: JSON.stringify(job)
      }).then(()=> handleEdit())
-      
+     
     }
   
     const handleNotProgressed = () =>{
@@ -60,7 +61,7 @@ const [updatedNotes, setUpdatedNotes]  = useState(notes)
     }
 
  
-return <div className={styles.bigCard}>
+return <div className={styles.big_card}>
         <h1>{company}</h1>
         <h3>{jobTitle}</h3>
         <a href={link}>Link to {company} Post</a>
