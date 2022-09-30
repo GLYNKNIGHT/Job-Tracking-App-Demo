@@ -18,13 +18,6 @@ const Job = ({jobTitle,
 const [bigCard , setBigCard] = useState(false)
 
 
-const handleDelete = ({id}) =>{
-        
-        fetch(`http://localhost:8000/jobs/${id}`, {
-        method: 'DELETE',
-       }).then(()=> console.log(`Item ${id} Deleted`), handleEdit())
-    }
-    
 
 
 return <>
@@ -68,7 +61,7 @@ return <>
         </div>
         <div className={styles.job_btns}>
                 <button className={`update${company}`} onClick={()=> setBigCard(true)}>Update</button>
-                <button className={`remove${company}`} onClick={()=> handleDelete({id})}> Remove</button>
+                
         </div>
     </div>
 

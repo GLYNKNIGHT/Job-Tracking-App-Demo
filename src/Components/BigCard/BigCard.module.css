@@ -16,7 +16,37 @@
   overflow-y: scroll;
   font-size: 1.5rem;
 }
-  
+
+.btn{
+  background-color: green;
+  color: white;
+  width: 7vw;
+  font-size: 0.8vw;
+  height: 1vw;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: green;
+}
+
+.del_btn{
+  width: 7vw;
+  height: 1vw;
+  font-size: 0.8vw;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: red;
+}
+    
+.del_btn:hover {
+  background-color: red;
+  color: white;
+}
+
   .bigCardBtns{
     display: flex;
     justify-content: right;
@@ -34,8 +64,10 @@
     height: 2.4rem;
     cursor: pointer;
     }
+
+
   
-  
+
   .notes{
     text-align: left;
   

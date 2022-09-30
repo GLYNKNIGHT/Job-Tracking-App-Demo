@@ -62,21 +62,6 @@
       "id": 4
     },
     {
-      "jobTitle": "Head of Awesomeness",
-      "company": "A Company",
-      "salary": "£40000 +",
-      "link": "https://www.linkedin.com/in/glyn-knight/",
-      "applied": true,
-      "interview": true,
-      "offer": true,
-      "dateAdded": "2022-09-30",
-      "notes": [
-        "Awesome"
-      ],
-      "notProgressed": false,
-      "id": 5
-    },
-    {
       "jobTitle": "Job",
       "company": "B Company ",
       "salary": "Under £25000",
@@ -90,6 +75,21 @@
       ],
       "notProgressed": false,
       "id": 6
+    },
+    {
+      "jobTitle": "Head of Awesomeness ",
+      "company": "A Company",
+      "salary": "£40000 +",
+      "link": "https://www.linkedin.com/in/glyn-knight/",
+      "applied": true,
+      "interview": true,
+      "offer": true,
+      "dateAdded": "2022-09-30",
+      "notes": [
+        "Awesome"
+      ],
+      "notProgressed": false,
+      "id": 8
     }
   ]
 }

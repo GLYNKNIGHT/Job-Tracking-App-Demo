@@ -49,14 +49,17 @@
 .btn
  {
   width: 5vw;
-  height: 2rem;
-  border-radius: 10px;
+  height: 2vw;
+  border-radius: 5px;
   font-size: 0.8vw;
   background-color: green;
   color: white;
 }
 
-
+.btn:hover{
+  background-color:white;
+  color: green;
+}
 
 
 /*Scroll Bars*/
