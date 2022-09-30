@@ -2,7 +2,7 @@
 
 .job{
     width: 95%;
-    height: 35vh;
+    height: 15vw;
     background-color: rgb(255, 255, 255);
     border: none;
     border-bottom: 0.7px solid rgb(48, 48, 48);
@@ -25,11 +25,11 @@
   
   .icons {
     position: absolute;
-    left:20px; 
-    bottom:10px;
+    left:0.5vw; 
+    bottom:0.3vw;
     display: flex;
     flex-direction: row;
-    gap:25px;
+    gap:0.6vw;
   }
 
   .icons img{
@@ -87,7 +87,7 @@
     right:0px; 
     bottom:0px;
     gap:10px;
-    margin: 20px;
+    margin: 0.5vw;
     margin-top:40px
     
   }
@@ -95,7 +95,7 @@
   .job_btns button{
     
     width: 5vw;
-    height: 2rem;
+    height: 2vw;
     border-radius: 10px;
     font-size: 0.8vw;
     background-color: green;
