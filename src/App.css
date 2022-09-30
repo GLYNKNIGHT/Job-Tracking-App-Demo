@@ -149,7 +149,7 @@ input:checked + .slider:before {
 }
 
 .filter-contaier{
-  width:100vw;
+  width:96.1vw;
   background-color: rgb(80, 80, 80);
  padding-left: 3.2vw;
  padding-top: 2vh;

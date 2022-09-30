@@ -8,7 +8,6 @@ import Filter from './Components/Filter/Filter.js';
 
 function App() {
 const [jobs, setJobs] = useState(null)
-const [filter, setFilter] = useState('')
 const [displayData, setDisplayData] = useState(null)
 
   useEffect(()=> {
@@ -20,35 +19,13 @@ const [displayData, setDisplayData] = useState(null)
   }, [])
 
 
-  const handleFilter = (e) =>{
-    let filter = e.target.value
-    let jobsData = jobs
-
-    if (filter === 'All'){
-      console.log(filter)
-      setDisplayData(jobs)}
-
-    if (filter === 'applied'){
-      jobsData = jobs.filter((job)=> job.applied === true)}
-
-    if (filter === 'date'){
-      alert('Not working yet')}
-
-    if (filter === 'notProgressed'){
-        jobsData = jobs.filter((job)=> job.notProgressed === false)}
-
-    if (filter === 'interview'){
-        jobsData = jobs.filter((job)=> job.interview === true)}
-
-    setDisplayData(jobsData)
-    console.log(displayData)
-  }
-
+ 
   return (
     <div className="App">
     
-    <Header /><div className='filter-contaier'>
-    <Filter filter={filter} setFilter={setFilter} handleFilter={handleFilter} />
+    <Header />
+    <div className='filter-contaier'>
+    <Filter jobs={jobs} displayData={displayData} setDisplayData={setDisplayData} />
     </div>
     <div className='main'>
       {jobs && <List displayData={displayData} setDisplayData={setDisplayData}/>}
