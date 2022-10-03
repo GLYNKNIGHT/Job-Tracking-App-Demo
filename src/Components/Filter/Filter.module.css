@@ -1,6 +1,17 @@
 .filter{
     width: 15vw;
+    height:3.7vh;
     font-size: 1vw;
     border-radius: 5px;
     padding:5px
+  }
+
+  @media screen and (max-width: 800px){
+    .filter{
+      width: 30vw;
+      height:3.7vh;
+      font-size: 3vw;
+      border-radius: 5px;
+      padding:5px
+    }
   }

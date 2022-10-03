@@ -121,7 +121,7 @@ return <div className={styles.big_card}>
         <button className={styles.btn}  onClick={()=> handleSubmit()}> Save Changes</button>
         <button className={styles.btn}  onClick={()=> setBigCard(false)}> Close</button>
         <button className={styles.del_btn} onClick={()=> handleNotProgressed()}>Not Progressed</button>
-        <button className={styles.del_btn} onClick={()=> handleDelete({id})}> Remove</button>
+        <button className={styles.del_btn} onClick={()=> handleDelete({id})}> Delete</button>
     </div>
 </div>
 }
