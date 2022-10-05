@@ -13,15 +13,15 @@ const offerJobs = jobs.filter((job)=> job.offer === true);
 
 
 return <div className={Styles.stats}>
-<p>Total: {jobs.length}</p>
+<p>Total:<strong> {jobs.length}</strong></p>
 <p>|</p>
-<p>In Progress:  {inProgressJobs.length}</p>
+<p>In Progress: <strong> {inProgressJobs.length} </strong></p>
 <p>|</p>
-<p>Applied:  {appliedJobs.length} </p>
+<p>Applied:<strong> {appliedJobs.length}</strong>  </p>
 <p>|</p>
-<p>Interview:  {interviewJobs.length}</p>
+<p>Interview:<strong> {interviewJobs.length}</strong> </p>
 <p>|</p>
-<p>Offer:  {offerJobs.length}</p>
+<p>Offer: <strong> {offerJobs.length}</strong></p>
 
     </div>
 }

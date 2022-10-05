@@ -4,15 +4,16 @@ const Sort = ({displayData, setDisplayData}) =>{
 
     const handleSort = (e) =>{
         let sortValue = e.target.value
-        let sortedData = displayData
+        //let sortedData = displayData
 
         if (sortValue === 'date'){
-            sortedData = displayData.sort(function(a,b){
+            displayData.map((job)=> job.sorted = true)
+            displayData= displayData.sort(function(a,b){
             return new Date(b.dateAdded) - new Date(a.dateAdded);
           })
           }
 
-        setDisplayData(sortedData) 
+        setDisplayData(displayData) 
         console.log(displayData)
       }
     

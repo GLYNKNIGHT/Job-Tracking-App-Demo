@@ -13,6 +13,7 @@
         "Deadline - 15/10/22"
       ],
       "notProgressed": false,
+      "sorted":false,
       "id": 2
     },
     {
@@ -29,6 +30,7 @@
         "Interview booked 08/11/22"
       ],
       "notProgressed": false,
+      "sorted":false,
       "id": 3
     },
     {
@@ -44,6 +46,7 @@
         "Great company pension "
       ],
       "notProgressed": true,
+      "sorted":false,
       "id": 7
     },
     {
@@ -59,6 +62,7 @@
         "Great company pension "
       ],
       "notProgressed": false,
+      "sorted":false,
       "id": 4
     },
     {
@@ -67,13 +71,14 @@
       "salary": "Under £25000",
       "link": "https://www.linkedin.com/in/glyn-knight/",
       "applied": true,
-      "interview": false,
+      "interview": true,
       "offer": false,
       "dateAdded": "2022-09-29",
       "notes": [
         "Test date"
       ],
       "notProgressed": false,
+      "sorted":false,
       "id": 6
     },
     {
@@ -89,6 +94,7 @@
         "Awesome"
       ],
       "notProgressed": false,
+      "sorted":false,
       "id": 8
     }
   ]

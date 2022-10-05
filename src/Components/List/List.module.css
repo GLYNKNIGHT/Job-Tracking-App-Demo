@@ -1,6 +1,6 @@
 .jobs_list{
     width:65vw;
-    height:80vh;
+    height:70vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
