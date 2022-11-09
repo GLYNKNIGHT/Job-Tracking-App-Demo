@@ -9,7 +9,7 @@ const Sort = ({displayData, setDisplayData}) =>{
         if (sortValue === 'date'){
             displayData.map((job)=> job.sorted = true)
             displayData= displayData.sort(function(a,b){
-            return new Date(b.dateAdded) - new Date(a.dateAdded);
+            return (b.dateAdded - a.dateAdded);
           })
           }
 

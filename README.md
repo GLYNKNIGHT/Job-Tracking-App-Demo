@@ -7,7 +7,7 @@ The app allows users to add and remove each job as well as add notes and update 
 
 <img src="https://live.staticflickr.com/65535/52386720832_91461422bf_b.jpg" width="384" height="197" alt="Capture">  <img src="https://live.staticflickr.com/65535/52386720817_78e0fa8537_b.jpg" width="384" height="197" alt="Capture1">
  
-Built in React the app is designed be be used in the browser on laptop/desktop (To run the front end use; *npm start*) . Progress uses JSON-Server as a development backend. To run the JSON Server use : *npx json-server -p 8000 -w data/db.json*
+Built in React the app is designed be be used in the browser on laptop/desktop (To run the front end use; *npm start*) . Progress uses JSON-Server as a development backend. To run the JSON Server use : *npm run server*
 
 I have also used Cypress and React Testing Library for testing    
   
